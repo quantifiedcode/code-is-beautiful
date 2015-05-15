@@ -9,7 +9,7 @@ We’re [QuantifiedCode](https://www.quantifiedcode.com), a Berlin-based startup
 
 ##Available visualizations
 
-<img src="/sunburst/sunburst.png?raw=true" width="200" alt="Sunburst (Hierarchical pie chart)">
+<a href="/sunburst/README.md"><img src="/sunburst/sunburst.png?raw=true" width="200" alt="Sunburst (Hierarchical pie chart)"></a>
 
 ## How to contribute
 
@@ -33,4 +33,4 @@ If you have any questions, please get in touch with us:
 
 ## More code (quality) projects
 
-* [Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-code-patterns/)
+* [Little Book of Python Anti-Patterns](http://docs.quantifiedcode.com/python-code-patterns/)
