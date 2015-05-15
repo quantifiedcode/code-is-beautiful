@@ -11,8 +11,6 @@ We’re [QuantifiedCode](https://www.quantifiedcode.com), a Berlin-based startup
 
 We've just started, join us!
 
----------------
-
 ## How to contribute
 
 Contributions are very welcome, and are greatly appreciated! Every little bit helps, and credit will always be given.
