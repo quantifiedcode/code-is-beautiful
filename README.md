@@ -9,7 +9,7 @@ We’re [QuantifiedCode](https://www.quantifiedcode.com), a Berlin-based startup
 
 ##Available visualizations
 
-<img align="left" src="/sunburst/sunburst.png?raw=true" width="200" alt="Sunburst (Hierarchical pie chart)">
+<img src="/sunburst/sunburst.png?raw=true" width="200" alt="Sunburst (Hierarchical pie chart)">
 
 ## How to contribute
 
