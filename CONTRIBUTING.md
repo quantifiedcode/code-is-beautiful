@@ -34,11 +34,11 @@ If you are reporting a bug, please include:
 * Detailed steps to reproduce the bug
 * A screenshots (if useful)
 
+### Add new features/visualizations
+Feel free to add your own visualization. You can also go through the [Github issues](https://github.com/quantifiedcode/code-is-beautiful/issues). Anything tagged as "feature" is open to whoever wants to implement it.
+
 ### Fix Bugs
 Go through the [Github issues](https://github.com/quantifiedcode/code-is-beautiful/issues). Anything that is tagged as "bug" is open to whoever wants to implement it.
-
-### Add new features/visuals
-Go through the [Github issues](https://github.com/quantifiedcode/code-is-beautiful/issues). Anything tagged as "feature" is open to whoever wants to implement it.
 
 ### Write documentation
 "Code-is-beautiful" can always get more documentation, whether as part of the official [docs](https://docs.quantifiedcode.com), in docstrings, or even on the web in blog posts, articles, and such.
