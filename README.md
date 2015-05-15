@@ -1,7 +1,7 @@
 #Welcome to "Code-is-beautiful"
 
 ##About
-Code-is-beautiful is a cross-language project, aimed to create new / better ways to visualize source code.
+<img align="left" src="/sunburst/screenshot.png" width="300" alt="code-is-beautiful"> Code-is-beautiful is a cross-language project, aimed to create new / better ways to visualize source code.
 
 ##Who we are
 
