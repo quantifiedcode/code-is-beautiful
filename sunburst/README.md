@@ -1,8 +1,8 @@
-# Sunburst (Hierarchical cie chart)
+# Sunburst (Hierarchical pie chart)
 
 ##About
 
-<img align="left" src="/sunburst/sunburst.png?raw=true" width="300" alt="code-is-beautiful"> This is a visualization of the Flask Python source code, generated using [D3](http://www.d3js.org). Technically, it is a hierarchical pie chart, that looks like a sunburst.
+<img align="left" src="/sunburst/sunburst.png?raw=true" width="200" alt="code-is-beautiful"> This is a visualization of the Flask Python source code, generated using [D3](http://www.d3js.org). Technically, it is a hierarchical pie chart, that looks like a sunburst.
 
 To build this graph, you have to calculate the number of lines and number of characters of a source file. Using that information, you can generate a hierarchical graph of the code which shows the fraction of the total characters contained in each directory and file.
 

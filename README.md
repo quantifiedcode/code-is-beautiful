@@ -1,15 +1,15 @@
 #Welcome to "Code-is-beautiful"
 
 ##About
-<img align="left" src="/sunburst/sunburst.png?raw=true" width="300" alt="code-is-beautiful"> Code-is-beautiful is a cross-language project, aimed to create new / better ways to visualize source code.
+Code-is-beautiful is a cross-language project, aimed to collect and develop better ways to visualize source code.
 
 ##Who we are
 
 We’re [QuantifiedCode](https://www.quantifiedcode.com), a Berlin-based startup. Our mission is to help programmers write better code! Therefore, we make state-of-the-art code analysis available to everyone. Our first product is an [online tool for automated, data-driven code review](https://www.quantifiedcode.com). When building this tool we learned a lot about code, code quality and code visualization. With this project we like to share our learnings back to the community and hope, with your support, to take code visualization to the next level.
 
-##Status
+##Available visualizations
 
-We've just started, join us!
+<img align="left" src="/sunburst/sunburst.png?raw=true" width="200" alt="Sunburst (Hierarchical pie chart)">
 
 ## How to contribute
 
