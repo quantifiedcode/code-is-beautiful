@@ -2,7 +2,7 @@
 
 ##About
 
-This is a visualization of the Flask Python source code, generated using [D3](http://www.d3js.org). Technically, it is a hierarchical pie chart, that looks like a sunburst.
+<img align="left" src="/sunburst.png?raw=true" width="300" alt="code-is-beautiful"> This is a visualization of the Flask Python source code, generated using [D3](http://www.d3js.org). Technically, it is a hierarchical pie chart, that looks like a sunburst.
 
 To build this graph, you have to calculate the number of lines and number of characters of a source file. Using that information, you can generate a hierarchical graph of the code which shows the fraction of the total characters contained in each directory and file.
 
@@ -13,10 +13,6 @@ Using this visualization, it is easy to see how the code is distributed in the r
 1. Checkout this repo
 2. Change to the folder "sunburst"
 3. Open index.html
-
-## Screenshot
-
-![Sunburst (Hierarchical pie chart))](/sunburst/sunburst.png?raw=true "Sunburst (Hierarchical pie chart))")
 
 ## Credits
 
