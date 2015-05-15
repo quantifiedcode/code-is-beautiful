@@ -1,4 +1,6 @@
-#About
+# Sunburst (Hierarchical Pie Chart)
+
+##About
 
 This is a visualization of the Flask Python source code, generated using D3. Technically, it is a hierarchical pie chart, that looks like a sunburst.
 
@@ -6,6 +8,10 @@ To build this graph, we pulled the source code from the Flask repository on gith
 
 Using this visualization, it is easy to see how the code is distributed in the repository. You can click on individual segments to get a zoomed-in view of individual branches (click on the central element to get back to the last view).
 
-# Screenshot
+## Screenshot
 
-![Alt text](/sunburst.png?raw=true "Hierarchical pie chart (Sunburst)")
+![Alt text](/sunburst/sunburst.png?raw=true "Hierarchical pie chart (Sunburst)")
+
+## Credits
+
+* [Andreas Dewes](http://www.andreas-dewes.de) [(@japh44)](http://twitter.com/japh44)
