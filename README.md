@@ -21,9 +21,16 @@ Contributions are very welcome, and are greatly appreciated! Every little bit he
 
 * [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc/4.0/) code-is-beautiful Documentation is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+## Feedback
+The best way to send feedback is to file an issue at [https://github.com/quantifiedcode/code-is-beautiful/issues](https://github.com/quantifiedcode/ /issues) or to reach out to us via [twitter](https://twitter/quantifiedcode) or [email](https://www.quantifiedcode.com/contact).
+
 ## Questions?
 
 If you have any questions, please get in touch with us:
 
-* [E-Mail](https://www.quantifiedcode.com/contact)
+* [Email](https://www.quantifiedcode.com/contact)
 * [@quantifiedcode](https://twitter.com/quantifiedcode)
+
+## More code (quality) projects
+
+* [Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-code-patterns/)

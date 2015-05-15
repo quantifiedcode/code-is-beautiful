@@ -42,6 +42,3 @@ Go through the [Github issues](https://github.com/quantifiedcode/code-is-beautif
 
 ### Write documentation
 "Code-is-beautiful" can always get more documentation, whether as part of the official [docs](https://docs.quantifiedcode.com), in docstrings, or even on the web in blog posts, articles, and such.
-
-### Submit feedback and propose features
-The best way to send feedback is to file an issue at [https://github.com/quantifiedcode/code-is-beautiful/issues](https://github.com/quantifiedcode/ /issues). Additionally, you can reach out to [us](https://twitter/quantifiedcode). We are looking forward getting in touch with you!
