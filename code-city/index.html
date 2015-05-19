@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<style>
-
-text {
-  font: 10px sans-serif;
-}
-</style>
+<head>
+  <link rel="stylesheet" type="text/css" href="../common/style.css"></link>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.v3.js"></script>
 <script src="src/app.js"></script>
 <script>
-main();
+window.onload = function() {
+  initChart('#code_hierarchy', '#code_hierarchy_legend');
+}
 </script>
+<h1>Code is Beautiful &mdash; Code City</h1>
+<div id="code_hierarchy_legend"></div>
+<div id="code_hierarchy"></div>
 </body>
 
