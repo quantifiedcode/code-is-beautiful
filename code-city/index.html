@@ -4,14 +4,17 @@
   <link rel="stylesheet" type="text/css" href="../common/style.css"></link>
 <body>
 <script src="http://d3js.org/d3.v3.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
 <script src="src/app.js"></script>
 <script>
 window.onload = function() {
-  initChart('#code_hierarchy', '#code_hierarchy_legend');
+  var scene = initScene('#city_canvas');
+  initChart('#code_hierarchy', '#code_hierarchy_legend', scene);
 }
 </script>
 <h1>Code is Beautiful &mdash; Code City</h1>
 <div id="code_hierarchy_legend"></div>
 <div id="code_hierarchy"></div>
+<div id="city_canvas"></div>
 </body>
 
