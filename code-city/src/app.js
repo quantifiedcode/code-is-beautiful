@@ -27,7 +27,7 @@ function initChart(chartEl, legendEl, scene) {
           .enter().append("g")
             .attr("class", "node")
             .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-            .each(function(d) { addHouse(scene, d.x, d.y, d.r, d.depth, color(d.depth)); });
+            .each(function(d) { scene.addHouse(d.x, d.y, d.r, d.depth, color(d.depth)); });
 
         node.append("title")
             .text(function(d) { return d.path + ": " + format(d.lines); });
@@ -51,6 +51,8 @@ function initChart(chartEl, legendEl, scene) {
                 legend.transition().duration(1000).style("opacity","0");
             }
         }
+        
+        scene.render();
     });
 }
 
@@ -91,14 +93,33 @@ function initScene(canvasEl) {
   // add subtle ambient lighting
   var ambientLight = new THREE.AmbientLight(0x313131);
   scene.add(ambientLight);
+    
+  return {
+    addHouse: function(x, y, r, level, color) {
+      var geometry = new THREE.CylinderGeometry( r / 500, r / 500, 0.1, 64 );
+      var material = new THREE.MeshLambertMaterial( { color: color } );
+      var cube = new THREE.Mesh( geometry, material );
   
-  function render(timestamp) {
-  	requestAnimationFrame( render );
-    renderer.render( scene, camera );
-  }
-  render();
+      cube.rotation.x = 1.57;
+      cube.position.x = x / 500 - 1;
+      cube.position.y = y / 500 - 1;
+      cube.position.z = level * 0.1;
   
-  return scene;
+      cube.castShadow = true;
+
+      scene.add( cube );
+    },
+    
+    render: function() {
+      renderer.render( scene, camera );
+
+      function animate() {
+      	requestAnimationFrame(animate);    
+      }
+
+      animate();
+    }
+  };
 }
 
 function treeize(list) {
