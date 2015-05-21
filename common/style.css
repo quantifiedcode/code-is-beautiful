@@ -19,8 +19,9 @@ h1 {
   margin: 26px 0;
 }
 
-#code_hierarchy {
-
+.code_chart {
+  display: inline-block;
+  zoom: 0.7;
 }
 
 #code_hierarchy_legend
@@ -33,9 +34,4 @@ h1 {
     h1 {
       margin: 26px 0;
     }
-}
-
-#city_canvas {
-  width: 900px;
-  height: 900px;
 }

@@ -8,13 +8,15 @@
 <script src="src/app.js"></script>
 <script>
 window.onload = function() {
-  var scene = initScene('#city_canvas');
-  initChart('#code_hierarchy', '#code_hierarchy_legend', scene);
+  var scene = initScene('#chart_3d');
+  initChart('#chart_2d', '#code_hierarchy_legend', scene);
 }
 </script>
 <h1>Code is Beautiful &mdash; Code City</h1>
 <div id="code_hierarchy_legend"></div>
-<div id="code_hierarchy"></div>
-<div id="city_canvas"></div>
+<div id="code_display"></div>
+  <div id="chart_2d" class="code_chart"></div>
+  <div id="chart_3d" class="code_chart"></div>
+</div>
 </body>
 

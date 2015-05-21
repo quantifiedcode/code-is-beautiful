@@ -10,7 +10,7 @@ function initChart(chartEl, legendEl, scene) {
     var bubble = d3.layout.pack()
         .sort(null)
         .size([diameter, diameter])
-        .value(function(d) { return 1; })
+        .value(function(d) { return d.lines; })
         .padding(1.5);
 
     var svg = d3.select(chartEl).append("svg")
@@ -20,7 +20,7 @@ function initChart(chartEl, legendEl, scene) {
 
     d3.json("metrics.json", function(error, root) {
       	var list = root.summary.python.metrics;
-      	var tree = treeize(list, 2);
+      	var tree = treeize(list, 1);
         var nodes = bubble.nodes(tree);
         var node = svg.selectAll(".node")
           .data(nodes)
@@ -101,19 +101,19 @@ function initScene(canvasEl) {
   return scene;
 }
 
-function treeize(list, maxLevel) {
+function treeize(list) {
   var tree = {};
   
   for (path in list) {
     if (list.hasOwnProperty(path)) {
-      addChild(tree, path.split('/'), path, list[path], maxLevel);
+      addChild(tree, path.split('/'), path, list[path]);
     }
   }
   
   return tree;
 }
 
-function addChild(tree, nameList, path, node, maxLevel) {
+function addChild(tree, nameList, path, node) {
   var nameFirst = nameList.shift();
   var child;
 
@@ -135,9 +135,7 @@ function addChild(tree, nameList, path, node, maxLevel) {
     }
 
     if (nameList.length > 0) {
-      if (maxLevel === undefined || (--maxLevel >= 0)) {
-        addChild(child, nameList, path, node, maxLevel);
-      }
+      addChild(child, nameList, path, node);
     }
     else {
       child.path = path;
