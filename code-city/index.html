@@ -8,8 +8,9 @@
 <script src="src/app.js"></script>
 <script>
 window.onload = function() {
-  var scene = initScene('#chart_3d', '#code_hierarchy_legend');
-  initChart('#chart_2d', '#code_hierarchy_legend', scene);
+  var legend = initLegend('#code_hierarchy_legend');
+  var scene = initScene('#chart_3d', legend);
+  initChart('#chart_2d', legend, scene);
 }
 </script>
 <h1>Code is Beautiful &mdash; Code City</h1>

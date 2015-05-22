@@ -1,8 +1,22 @@
-function legend_function(d) {
-    return "<h2>" + (d.path || "/") + "</h2><p>" + d.lines + " lines of code.</p>"
+function initLegend(legendEl) {
+  var legend = d3.select(legendEl);
+  
+  function legendMarkup(d) {
+      return "<h2>" + (d.path || "/") + "</h2><p>" + d.lines + " lines of code.</p>"
+  }
+  
+  return {
+    update: function(d) {
+      legend.html(legendMarkup(d));
+      legend.transition().duration(200).style("opacity","1");
+    },
+    remove: function(d) {
+      legend.transition().duration(1000).style("opacity","0");
+    }
+  };
 }
 
-function initChart(chartEl, legendEl, scene) {
+function initChart(chartEl, legend, scene) {
     var diameter = 1000,
         format = d3.format(",d"),
         color = d3.scale.category20c();
@@ -36,46 +50,43 @@ function initChart(chartEl, legendEl, scene) {
             .attr("r", function(d) { return d.r; })
             .style("fill", function(d) { return color(d.depth); });
 
-        if (legendEl) {
-          var legend = d3.select(legendEl);
-
-          function update_legend(d) {
-              legend.html(legend_function(d));
-              legend.transition().duration(200).style("opacity","1");
-          }
-
-          function remove_legend(d) {
-              legend.transition().duration(1000).style("opacity","0");
-          }
-
-          node.on("mouseover",update_legend)
-            .on("mouseout",remove_legend);  
+        if (legend) {
+          node.on("mouseover", legend.update)
+            .on("mouseout", legend.remove);  
         }
         
+        scene.render();
         scene.animate();
     });
 }
 
-function initScene(canvasEl, legendEl) {
+function initScene(canvasEl, legend) {
+  var width = 1000, height = 1000;
   var canvas = d3.select(canvasEl);
   var mouse = new THREE.Vector2();
   var raycaster = new THREE.Raycaster();
   var scene = new THREE.Scene();
-  var camera = new THREE.PerspectiveCamera( 45, 1, 0.1, 1000 );
+  var camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000 );
   var renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
   var intersected;
-  var legend = d3.select(legendEl);
-
-  function update_legend(d) {
-      legend.html(legend_function(d));
-      legend.transition().duration(200).style("opacity","1");
-  }
-
-  function remove_legend(d) {
-      legend.transition().duration(1000).style("opacity","0");
+  
+  function render() {  
+    renderer.render(scene, camera);
   }
   
-  function render() {
+  function animate() {
+    requestAnimationFrame(animate);    
+  }
+  
+  function onCanvasMouseMove(event) {
+    var e = event;
+    var et = e.target;
+  
+    e.preventDefault();
+  
+    mouse.x = ((e.pageX - et.offsetLeft) / et.clientWidth) * 2 - 1;
+    mouse.y = - ((e.pageY - et.offsetTop) / et.clientHeight) * 2 + 1;
+    
 		raycaster.setFromCamera(mouse, camera);
 
 		var intersects = raycaster.intersectObjects( scene.children );
@@ -90,36 +101,21 @@ function initScene(canvasEl, legendEl) {
 				intersected.currentHex = intersected.material.emissive.getHex();
 				intersected.material.emissive.setHex( 0xff0000 );
         
-        update_legend(intersected.d);
+        legend.update(intersected.d);
+        render();
 			}
 
 		}
     else if (intersected) {
       intersected.material.emissive.setHex(intersected.currentHex);
 			intersected = null;      
-      remove_legend();
+
+      legend.remove();
+      render();
 		}
-  
-    renderer.render(scene, camera);
-  }
-  
-  function animate() {
-    requestAnimationFrame(animate);
-    
-    render();
-  }
-  
-  function onCanvasMouseMove(event) {
-    var e = event;
-    var et = e.target;
-  
-    e.preventDefault();
-  
-    mouse.x = ((e.pageX - et.offsetLeft) / et.clientWidth) * 2 - 1;
-    mouse.y = - ((e.pageY - et.offsetTop) / et.clientHeight) * 2 + 1;
   }
 
-  renderer.setSize( 1000, 1000 );
+  renderer.setSize(width, height);
   renderer.setClearColor( 0xffffff, 1);
   canvas.node().appendChild(renderer.domElement);
 
@@ -146,7 +142,7 @@ function initScene(canvasEl, legendEl) {
   
       cube.rotation.x = Math.PI / 2;
       cube.position.x = x / 500 - 1;
-      cube.position.y = y / 500 - 1;
+      cube.position.y = 1 - y / 500;
       cube.position.z = level * 0.1;
   
       cube.castShadow = true;
@@ -155,9 +151,8 @@ function initScene(canvasEl, legendEl) {
       scene.add( cube );
     },
     
-    animate: function() {
-      animate();
-    }
+    render: render,
+    animate: animate
   };
 }
 
