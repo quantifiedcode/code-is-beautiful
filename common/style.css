@@ -20,17 +20,20 @@ h1 {
 }
 
 .code_chart {
+  text-align: center;
+}
+
+.treemap {
   display: inline-block;
 }
 
-#code_hierarchy_legend
-{
+#code_hierarchy_legend {
     height:120px;
-    font-size:1.4em;
     text-align:center;
     margin: 26px 0;
+    font-size:1.4em;
+}
 
-    h1 {
-      margin: 26px 0;
-    }
+.node {
+  position: absolute;
 }

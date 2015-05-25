@@ -2,7 +2,7 @@ function initLegend(legendEl) {
   var legend = d3.select(legendEl);
   
   function legendMarkup(d) {
-      return "<h2>" + (d.path || "/") + "</h2><p>" + d.lines + " lines of code.</p>"
+      return "<p><b>" + (d.path || "/") + "</b></p><p>" + d.lines + " lines of code, " + d.chars + " characters</p>"
   }
   
   return {
@@ -21,34 +21,39 @@ function initChart(chartEl, legend, scene) {
         format = d3.format(",d"),
         color = d3.scale.category20c();
 
-    var bubble = d3.layout.pack()
-        .sort(null)
+    var layout = d3.layout.treemap()
         .size([diameter, diameter])
-        .value(function(d) { return d.lines; })
-        .padding(1.5);
+        .sticky(true)
+        .padding(5)
+        .value(function(d) { return d.lines; });
 
-    var svg = d3.select(chartEl).append("svg")
-        .attr("width", diameter)
-        .attr("height", diameter)
-        .attr("class", "bubble");
+    var svg = d3.select(chartEl).append("div")
+        .style("position", "relative")
+        .style("width", diameter + "px")
+        .style("height", diameter + "px")
+        .attr("class", "treemap");
+
+    function position() {
+      this.style("left", function(d) { return d.x + "px"; })
+          .style("top", function(d) { return d.y + "px"; })
+          .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+          .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+    }
 
     d3.json("metrics.json", function(error, root) {
       	var list = root.summary.python.metrics;
       	var tree = treeize(list);
-        var nodes = bubble.nodes(tree);
+        var nodes = layout.nodes(tree);
         var node = svg.selectAll(".node")
           .data(nodes)
-          .enter().append("g")
+          .enter().append("div")
             .attr("class", "node")
-            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
-            .each(function(d) { scene.addHouse(d, d.x, d.y, d.r, d.depth, color(d.depth)); });
+            .call(position)
+            .style("background-color", function(d) { return color(d.depth); })
+            .each(function(d) { scene.addHouse(d, d.x, d.y, d.dx, d.dy, d.depth, color(d.depth)); });
 
         node.append("title")
             .text(function(d) { return d.path + ": " + format(d.lines); });
-
-        node.append("circle")
-            .attr("r", function(d) { return d.r; })
-            .style("fill", function(d) { return color(d.depth); });
 
         if (legend) {
           node.on("mouseover", legend.update)
@@ -66,9 +71,10 @@ function initScene(canvasEl, legend) {
   var mouse = new THREE.Vector2();
   var raycaster = new THREE.Raycaster();
   var scene = new THREE.Scene();
-  var camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 1000 );
+  var camera = new THREE.OrthographicCamera(-1.5, 1.5, 1.5, -1.5, 0.1, 1000 );
   var renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
   var intersected;
+  var rootHouse;
   
   function render() {  
     renderer.render(scene, camera);
@@ -89,7 +95,7 @@ function initScene(canvasEl, legend) {
     
 		raycaster.setFromCamera(mouse, camera);
 
-		var intersects = raycaster.intersectObjects( scene.children );
+		var intersects = raycaster.intersectObjects(rootHouse ? [rootHouse].concat(rootHouse.children) : []);
 
 		if (intersects.length > 0) {
 			if (intersected != intersects[0].object) {
@@ -119,7 +125,8 @@ function initScene(canvasEl, legend) {
   renderer.setClearColor( 0xffffff, 1);
   canvas.node().appendChild(renderer.domElement);
 
-  camera.position.y = -2;
+  //camera.position.x = -1;
+  camera.position.y = -3;
   camera.position.z = 2;
   camera.lookAt(new THREE.Vector3(0, 0, 0));
 
@@ -133,22 +140,51 @@ function initScene(canvasEl, legend) {
 
   renderer.domElement.addEventListener('mousemove', onCanvasMouseMove, false);
 
+  function sigmoid(x) {
+    return 1 / (1 + Math.exp(-x));
+  }
+  
   return {
-    addHouse: function(d, x, y, r, level, color) {
-      var segments = Math.min(Math.max(Math.floor(r), 8), 100);
-      var geometry = new THREE.CylinderGeometry( r / 500, r / 500, 0.1, segments);
+    addHouse: function(d, x, y, w, h, level, color) {
+      var houseHeight;
+      
+      if (d.children) {
+        houseHeight = 1;
+      }
+      else {
+        houseHeight = 1 + (d.chars / 5665);
+      }
+
+      var depth = 10 / 1000;
+      var gw = Math.max(0, w - 1) / 500;
+      var gh = Math.max(0, h - 1) / 500;
+      var gd = depth * houseHeight;
+
+      var gx = x / 500 + gw / 2 - 1;
+      var gy = 1 - (y / 500 + gh / 2);
+      var gz = level * depth + gd / 2;
+
+      console.log('adding house <', d.path, '> (', d.chars, houseHeight, ')');
+
+      var geometry = new THREE.BoxGeometry(gw, gh, gd);
       var material = new THREE.MeshLambertMaterial( { color: color } );
       var cube = new THREE.Mesh( geometry, material );
-  
-      cube.rotation.x = Math.PI / 2;
-      cube.position.x = x / 500 - 1;
-      cube.position.y = 1 - y / 500;
-      cube.position.z = level * 0.1;
-  
+
+      cube.position.x = gx;
+      cube.position.y = gy;
+      cube.position.z = gz;
+      
       cube.castShadow = true;
 
       cube.d = d;
-      scene.add( cube );
+      
+      var objToAdd = rootHouse || scene;
+      objToAdd.add( cube );
+      
+      if (!rootHouse) {
+        rootHouse = cube;
+        rootHouse.rotation.z = Math.PI / 4;
+      }
     },
     
     render: render,
@@ -194,12 +230,14 @@ function addChild(tree, nameList, path, node) {
     }
     else {
       child.path = path;
+      child.chars = node.total_number_of_characters;
       child.lines = node.total_number_of_lines;
     }
   }
   else {
     tree.name = nameFirst;
     tree.path = path;
+    tree.chars = node.total_number_of_characters;
     tree.lines = node.total_number_of_lines;
   }
 }
