@@ -40,7 +40,8 @@ describe("Treeize function", function() {
   it("should populate the root node", function() {
     var tree = treeize(input);
     expect(tree.name).toBe('');
-    expect(tree.value).toBe(148549);
+    expect(tree.stats).toBeDefined();
+    expect(tree.stats.total_number_of_lines).toBe(148549);
   });
   
   it("should create some child nodes", function() {
@@ -50,7 +51,8 @@ describe("Treeize function", function() {
     var djangoChild = tree.children[0];
     
     expect(djangoChild.name).toBe('django');
-    expect(djangoChild.value).toBe(114928);
+    expect(djangoChild.stats).toBeDefined();
+    expect(djangoChild.stats.total_number_of_lines).toBe(114928);
   });
   
   it ("should create some sub-children nodes too", function() {
@@ -69,7 +71,8 @@ describe("Treeize function", function() {
     
     expect(appsChild).toBeDefined();
     expect(appsChild.name).toBe('apps');
-    expect(appsChild.value).toBe(585);
+    expect(appsChild.stats).toBeDefined();
+    expect(appsChild.stats.total_number_of_lines).toBe(585);
     expect(appsChild.children).toBeDefined();    
   });
 });

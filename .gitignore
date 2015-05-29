@@ -57,4 +57,5 @@ docs/_build/
 target/
 
 # SASS cache
-.sass-cache
+.sass-cache/
+bower_components/

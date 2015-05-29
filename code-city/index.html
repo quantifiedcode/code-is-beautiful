@@ -3,16 +3,16 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css"></link>
 <body>
-<script src="http://d3js.org/d3.v3.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-<script src="app.js"></script>
+<script src="bower_components/d3/d3.js"></script>
+<script src="bower_components/threejs/build/three.js"></script>
+<script src="code-city.js"></script>
 <script>
 window.onload = function() {
-  var legend = initLegend('#code_hierarchy_legend');
-  var data = loadData('summary.json');
+  var legend = CodeCity.initLegend('#code_hierarchy_legend');
+  var data = CodeCity.loadData('summary.json');
   
-  initChart('#chart_2d', legend, data);
-  initScene('#chart_3d', legend, data);
+  CodeCity.initChart2D('#chart_2d', legend, data);
+  CodeCity.initChart3D('#chart_3d', legend, data);
 }
 </script>
 <h1>Code is Beautiful &mdash; Code City</h1>

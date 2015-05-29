@@ -1,5 +1,7 @@
 "use strict";
 
+var CodeCity = {};
+
 var houseMargin = 2;
 var houseFloorHeight = 3;
 var cityWidth = 1000;
@@ -123,7 +125,7 @@ function initLegend(legendEl) {
   };
 }
 
-function initChart(chartEl, legend, data) {
+function initChart2D(chartEl, legend, data) {
   var format = d3.format(",d");
 
     var svg = d3.select(chartEl).append("div")
@@ -155,7 +157,7 @@ function initChart(chartEl, legend, data) {
     });
 }
 
-function initScene(canvasEl, legend, data) {
+function initChard3D(canvasEl, legend, data) {
   var canvas = d3.select(canvasEl);
   var mouse = new THREE.Vector2();
   var raycaster = new THREE.Raycaster();
@@ -280,3 +282,7 @@ function initScene(canvasEl, legend, data) {
   animate();
 }
 
+CodeCity.loadData = loadData;
+CodeCity.initLegend = initLegend;
+CodeCity.initChart2D = initChart2D;
+CodeCity.initChart3D = initChart3D;
