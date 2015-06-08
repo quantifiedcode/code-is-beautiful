@@ -4,7 +4,7 @@ function(){
     function stackChartModule(d3)
     {
 
-        function stackChart(element,data,params){
+        function stack(element,data,params){
 
             while (element.hasChildNodes())
             {
