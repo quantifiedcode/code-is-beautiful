@@ -2,7 +2,7 @@ define(['stack/stack',
         'jquery',
         'common/legend',
         'data/loaders',
-        'data/helpers'],function(stackChart,$,legend,dataLoaders,dataHelpers)
+        'data/helpers'],function(stack,$,legend,dataLoaders,dataHelpers)
 {
     var data = dataLoaders.complexityExample();
 
@@ -77,7 +77,7 @@ define(['stack/stack',
             var treeData = dataHelpers.convertToTree(d,mapperParams);
             //we add color to the elements (using the min/max information)
             dataHelpers.colorize(treeData,'colorValue',nodeColorScale);
-            stackChart.stackChart($('#stack-chart')[0], treeData, graphParams);
+            stack.stack($('#stack-chart')[0], treeData, graphParams);
         });
 
 });

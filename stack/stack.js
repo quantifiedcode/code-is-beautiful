@@ -12,7 +12,17 @@ function(){
             }
 
             var width = element.offsetWidth;
-            var height = params.height || 150;
+            var height = 250;
+            if (params.height){
+                if (params.heightType){
+                    if (params.heightType == 'percent')
+                        height = width*params.height/100.0;
+                    else
+                        height = params.height; //we assume absolute
+                }
+                else
+                    height = params.height;//we assume absolute, again
+            }
             var name_index = 0;
             var count_index = 1;
             var children_index = 3;
@@ -231,7 +241,7 @@ function(){
             };
 
         }
-        return {stackChart: stackChart};
+        return {stack: stack};
     }
 
     if (typeof define === "function" && define.amd){
