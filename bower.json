@@ -1,0 +1,33 @@
+{
+  "name": "code-is-beautiful",
+  "version": "0.0.1",
+  "homepage": "https://github.com/quantifiedcode/code-is-beautiful",
+  "authors": [
+    "Jarda Snajdr <jsnajdr@gmail.com>",
+    "Andreas Dewes <andreas@quantifiedcode.com>"
+  ],
+  "description": "Code City visualization",
+  "main": "code-city.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "AGPL",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.5",
+    "threejs": "*",
+    "jquery" : "*",
+    "bootstrap": "*",
+    "requirejs" : "*"
+  },
+  "devDependencies": {
+    "jasmine": "~2.3.4"
+  }
+}

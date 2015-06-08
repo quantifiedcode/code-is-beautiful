@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+      <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+
+      <script src="../config.js"></script>
+      <script data-main="code-city/main" src="../bower_components/requirejs/require.js"></script>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">Code is Beautiful!</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <form class="navbar-form navbar-right">
+                <div class="form-group">
+                  <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">subscribe to our newsletter</button>
+              </form>
+            </div><!--/.navbar-collapse -->
+          </div>
+        </nav>
+
+        <div class="container">
+            <h2>Code City <a href="/" class="btn btn-primary">back to index</a></h2>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                        <div class="code-city-canvas" id="code-city-canvas">
+                            <div id="code-city-chart" class="code-city-chart"></div>
+                            <div id="code-city-legend" class="code-city-legend"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
