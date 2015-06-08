@@ -58,7 +58,8 @@ define(['stack/stack',
     }
 
     var graphParams = {
-        legend: legend(legendDiv,legendTitle,legendContent)
+        legend: legend(legendDiv,legendTitle,legendContent),
+        height: 600
     };
 
     var mapperParams = {
