@@ -7,7 +7,6 @@
     "Andreas Dewes <andreas@quantifiedcode.com>"
   ],
   "description": "Code City visualization",
-  "main": "code-city.js",
   "moduleType": [
     "globals"
   ],
@@ -16,7 +15,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "src/bower_components",
     "test",
     "tests"
   ],

@@ -72,7 +72,9 @@ define(['code-city/code-city',
         mappers: {
             height: nodeHeight,
             area: nodeArea,
-            colorValue: nodeColor
+            colorValue: nodeColor,
+            title: function(d){return d.key.split('/').slice(-1)[0];},
+            path: function(d){return d.key;}
         },
         split: function(key){return key.split('/')
     }};

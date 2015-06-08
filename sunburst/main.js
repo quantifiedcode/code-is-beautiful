@@ -24,7 +24,8 @@ define(['sunburst/sunburst',
 
 
     function legendTitle(d,e){
-        return d.path;
+        console.log(d);
+        return d.key;
     }
 
     function legendContent(d,e){
@@ -65,7 +66,8 @@ define(['sunburst/sunburst',
         mappers: {
             value: nodeValue,
             colorValue: nodeColor,
-            title: function(d){return d.key.split('/').slice(-1);}
+            title: function(d){return d.key.split('/').slice(-1)[0];},
+            path: function(d){return d.key;}
         },
         split: function(key){return key.split('/')
     }};
