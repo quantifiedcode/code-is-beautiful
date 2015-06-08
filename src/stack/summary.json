@@ -1,0 +1,6599 @@
+{
+  "summary": {
+    "python": {
+      "code_patterns": {
+        "": {
+          "classes": {
+            "average_cyclomatic_complexity": 9.307692307692308, 
+            "average_number_of_functions": 6.3076923076923075, 
+            "average_number_of_lines": 73.43589743589743, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                25
+              ], 
+              [
+                3, 
+                2
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                7, 
+                2
+              ], 
+              [
+                12, 
+                1
+              ], 
+              [
+                14, 
+                1
+              ], 
+              [
+                15, 
+                1
+              ], 
+              [
+                18, 
+                1
+              ], 
+              [
+                29, 
+                1
+              ], 
+              [
+                37, 
+                1
+              ], 
+              [
+                47, 
+                1
+              ], 
+              [
+                65, 
+                1
+              ], 
+              [
+                77, 
+                1
+              ]
+            ], 
+            "n": 39, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                39
+              ]
+            ], 
+            "total_cyclomatic_complexity": 363, 
+            "total_number_of_functions": 246, 
+            "total_number_of_lines": 2864
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                95
+              ], 
+              [
+                "module", 
+                3
+              ], 
+              [
+                "classdef", 
+                18
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                44
+              ], 
+              [
+                "functiondef", 
+                353
+              ], 
+              [
+                "classdef", 
+                39
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "functiondef", 
+                17919
+              ], 
+              [
+                "module", 
+                142
+              ], 
+              [
+                "classdef", 
+                5264
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.189801699716714, 
+            "average_number_of_lines": 12.152974504249292, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                191
+              ], 
+              [
+                2, 
+                70
+              ], 
+              [
+                3, 
+                41
+              ], 
+              [
+                4, 
+                20
+              ], 
+              [
+                5, 
+                12
+              ], 
+              [
+                6, 
+                6
+              ], 
+              [
+                7, 
+                4
+              ], 
+              [
+                8, 
+                4
+              ], 
+              [
+                10, 
+                2
+              ], 
+              [
+                11, 
+                1
+              ], 
+              [
+                22, 
+                1
+              ], 
+              [
+                30, 
+                1
+              ]
+            ], 
+            "n": 353, 
+            "n_errors": 5, 
+            "naming_conventions": [
+              [
+                "mixedCase", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                291
+              ], 
+              [
+                "special_variable", 
+                56
+              ], 
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 773, 
+            "total_number_of_lines": 4290
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pymongo", 
+              "tempfile", 
+              "subprocess", 
+              "pytest", 
+              "os", 
+              "datetime", 
+              "json", 
+              "operator", 
+              "re", 
+              "six", 
+              "abc", 
+              "copy", 
+              "hashlib", 
+              "uuid", 
+              "gzip", 
+              "os.path", 
+              "time", 
+              "sys", 
+              "cjson", 
+              "marshal", 
+              "cPickle", 
+              "pickle", 
+              "faker", 
+              "math", 
+              "random", 
+              "logging", 
+              "traceback", 
+              "blitzdb", 
+              "inspect"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Backend", 
+                  "Actor", 
+                  "Director", 
+                  "Movie", 
+                  "generate_test_data", 
+                  "Document", 
+                  "test_mongo", 
+                  "mongodb_backend", 
+                  "QuerySet", 
+                  "wraps", 
+                  "reduce", 
+                  "Style", 
+                  "Keyword", 
+                  "Name", 
+                  "Comment", 
+                  "String", 
+                  "Error", 
+                  "Number", 
+                  "Operator", 
+                  "Generic", 
+                  "Whitespace", 
+                  "Punctuation", 
+                  "Other", 
+                  "Literal", 
+                  "Store", 
+                  "TransactionalStore", 
+                  "Index", 
+                  "TransactionalIndex", 
+                  "NonUnique", 
+                  "absolute_import", 
+                  "*", 
+                  "defaultdict", 
+                  "PickleSerializer", 
+                  "setup", 
+                  "find_packages", 
+                  "JsonEncoder", 
+                  "NotInTransaction", 
+                  "JsonSerializer", 
+                  "MarshalSerializer", 
+                  "CJsonSerializer", 
+                  "compile_query", 
+                  "document_classes"
+                ]
+              ]
+            ], 
+            "n_errors": 9
+          }, 
+          "variables": {
+            "average_length": 7.672862453531598, 
+            "n": 538, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                522
+              ], 
+              [
+                "special_variable", 
+                11
+              ], 
+              [
+                "CamelCase", 
+                5
+              ]
+            ]
+          }
+        }, 
+        "blitzdb": {
+          "classes": {
+            "average_cyclomatic_complexity": 9.526315789473685, 
+            "average_number_of_functions": 6.473684210526316, 
+            "average_number_of_lines": 73.28947368421052, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                24
+              ], 
+              [
+                3, 
+                2
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                7, 
+                2
+              ], 
+              [
+                12, 
+                1
+              ], 
+              [
+                14, 
+                1
+              ], 
+              [
+                15, 
+                1
+              ], 
+              [
+                18, 
+                1
+              ], 
+              [
+                29, 
+                1
+              ], 
+              [
+                37, 
+                1
+              ], 
+              [
+                47, 
+                1
+              ], 
+              [
+                65, 
+                1
+              ], 
+              [
+                77, 
+                1
+              ]
+            ], 
+            "n": 38, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                38
+              ]
+            ], 
+            "total_cyclomatic_complexity": 362, 
+            "total_number_of_functions": 246, 
+            "total_number_of_lines": 2785
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                94
+              ], 
+              [
+                "module", 
+                2
+              ], 
+              [
+                "classdef", 
+                18
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                40
+              ], 
+              [
+                "functiondef", 
+                352
+              ], 
+              [
+                "classdef", 
+                38
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                56
+              ], 
+              [
+                "classdef", 
+                5264
+              ], 
+              [
+                "functiondef", 
+                17887
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.1931818181818183, 
+            "average_number_of_lines": 12.176136363636363, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                190
+              ], 
+              [
+                2, 
+                70
+              ], 
+              [
+                3, 
+                41
+              ], 
+              [
+                4, 
+                20
+              ], 
+              [
+                5, 
+                12
+              ], 
+              [
+                6, 
+                6
+              ], 
+              [
+                7, 
+                4
+              ], 
+              [
+                8, 
+                4
+              ], 
+              [
+                10, 
+                2
+              ], 
+              [
+                11, 
+                1
+              ], 
+              [
+                22, 
+                1
+              ], 
+              [
+                30, 
+                1
+              ]
+            ], 
+            "n": 352, 
+            "n_errors": 5, 
+            "naming_conventions": [
+              [
+                "mixedCase", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                290
+              ], 
+              [
+                "special_variable", 
+                56
+              ], 
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 772, 
+            "total_number_of_lines": 4286
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pytest", 
+              "datetime", 
+              "json", 
+              "operator", 
+              "re", 
+              "six", 
+              "abc", 
+              "copy", 
+              "hashlib", 
+              "uuid", 
+              "os", 
+              "gzip", 
+              "os.path", 
+              "time", 
+              "pymongo", 
+              "tempfile", 
+              "subprocess", 
+              "sys", 
+              "cjson", 
+              "marshal", 
+              "cPickle", 
+              "pickle", 
+              "faker", 
+              "math", 
+              "random", 
+              "logging", 
+              "traceback", 
+              "blitzdb", 
+              "inspect"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "test_mongo", 
+                  "mongodb_backend", 
+                  "QuerySet", 
+                  "wraps", 
+                  "reduce", 
+                  "Store", 
+                  "TransactionalStore", 
+                  "Index", 
+                  "TransactionalIndex", 
+                  "NonUnique", 
+                  "Backend", 
+                  "absolute_import", 
+                  "*", 
+                  "Actor", 
+                  "defaultdict", 
+                  "PickleSerializer", 
+                  "Movie", 
+                  "Director", 
+                  "generate_test_data", 
+                  "JsonEncoder", 
+                  "NotInTransaction", 
+                  "JsonSerializer", 
+                  "MarshalSerializer", 
+                  "CJsonSerializer", 
+                  "compile_query", 
+                  "document_classes"
+                ]
+              ]
+            ], 
+            "n_errors": 9
+          }, 
+          "variables": {
+            "average_length": 7.4639376218323585, 
+            "n": 513, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                500
+              ], 
+              [
+                "special_variable", 
+                9
+              ], 
+              [
+                "CamelCase", 
+                4
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Backend", 
+                  "Document"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 11.0, 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "special_variable", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends": {
+          "classes": {
+            "average_cyclomatic_complexity": 15.3, 
+            "average_number_of_functions": 9.75, 
+            "average_number_of_lines": 112.3, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                8
+              ], 
+              [
+                3, 
+                1
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                7, 
+                2
+              ], 
+              [
+                12, 
+                1
+              ], 
+              [
+                14, 
+                1
+              ], 
+              [
+                15, 
+                1
+              ], 
+              [
+                18, 
+                1
+              ], 
+              [
+                29, 
+                1
+              ], 
+              [
+                47, 
+                1
+              ], 
+              [
+                65, 
+                1
+              ], 
+              [
+                77, 
+                1
+              ]
+            ], 
+            "n": 20, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                20
+              ]
+            ], 
+            "total_cyclomatic_complexity": 306, 
+            "total_number_of_functions": 195, 
+            "total_number_of_lines": 2246
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                2
+              ], 
+              [
+                "functiondef", 
+                73
+              ], 
+              [
+                "classdef", 
+                14
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                17
+              ], 
+              [
+                "classdef", 
+                20
+              ], 
+              [
+                "functiondef", 
+                216
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                56
+              ], 
+              [
+                "classdef", 
+                3075
+              ], 
+              [
+                "functiondef", 
+                12801
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.509259259259259, 
+            "average_number_of_lines": 10.537037037037036, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                103
+              ], 
+              [
+                2, 
+                46
+              ], 
+              [
+                3, 
+                26
+              ], 
+              [
+                4, 
+                16
+              ], 
+              [
+                5, 
+                9
+              ], 
+              [
+                6, 
+                4
+              ], 
+              [
+                7, 
+                3
+              ], 
+              [
+                8, 
+                4
+              ], 
+              [
+                10, 
+                2
+              ], 
+              [
+                11, 
+                1
+              ], 
+              [
+                22, 
+                1
+              ], 
+              [
+                30, 
+                1
+              ]
+            ], 
+            "n": 216, 
+            "n_errors": 5, 
+            "naming_conventions": [
+              [
+                "mixedCase", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                179
+              ], 
+              [
+                "special_variable", 
+                31
+              ], 
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 542, 
+            "total_number_of_lines": 2276
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy", 
+              "datetime", 
+              "hashlib", 
+              "uuid", 
+              "os", 
+              "gzip", 
+              "os.path", 
+              "sys", 
+              "six", 
+              "cjson", 
+              "marshal", 
+              "cPickle", 
+              "pickle", 
+              "json", 
+              "pymongo", 
+              "logging", 
+              "traceback", 
+              "abc", 
+              "blitzdb", 
+              "operator", 
+              "re", 
+              "time", 
+              "inspect"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Backend", 
+                  "QuerySet", 
+                  "defaultdict", 
+                  "PickleSerializer", 
+                  "wraps", 
+                  "JsonEncoder", 
+                  "NotInTransaction", 
+                  "Document", 
+                  "JsonSerializer", 
+                  "MarshalSerializer", 
+                  "Index", 
+                  "TransactionalIndex", 
+                  "Store", 
+                  "TransactionalStore", 
+                  "CJsonSerializer", 
+                  "compile_query", 
+                  "NonUnique", 
+                  "reduce", 
+                  "document_classes"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 7.881578947368421, 
+            "n": 304, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                299
+              ], 
+              [
+                "special_variable", 
+                4
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/backends/base.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 16.333333333333332, 
+            "average_number_of_functions": 6.0, 
+            "average_number_of_lines": 116.66666666666667, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                2
+              ], 
+              [
+                47, 
+                1
+              ]
+            ], 
+            "n": 3, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                3
+              ]
+            ], 
+            "total_cyclomatic_complexity": 49, 
+            "total_number_of_functions": 18, 
+            "total_number_of_lines": 350
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                13
+              ], 
+              [
+                "classdef", 
+                3
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                3
+              ], 
+              [
+                "functiondef", 
+                18
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                805
+              ], 
+              [
+                "functiondef", 
+                5499
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 3.7222222222222223, 
+            "average_number_of_lines": 18.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                7
+              ], 
+              [
+                2, 
+                4
+              ], 
+              [
+                3, 
+                3
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                7, 
+                1
+              ], 
+              [
+                10, 
+                1
+              ], 
+              [
+                22, 
+                1
+              ]
+            ], 
+            "n": 18, 
+            "n_errors": 2, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                17
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 67, 
+            "total_number_of_lines": 324
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy", 
+              "logging", 
+              "six", 
+              "abc", 
+              "inspect"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "document_classes"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 8.49056603773585, 
+            "n": 53, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                52
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/file": {
+          "classes": {
+            "average_cyclomatic_complexity": 11.846153846153847, 
+            "average_number_of_functions": 8.307692307692308, 
+            "average_number_of_lines": 96.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                5
+              ], 
+              [
+                3, 
+                1
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                7, 
+                1
+              ], 
+              [
+                12, 
+                1
+              ], 
+              [
+                14, 
+                1
+              ], 
+              [
+                15, 
+                1
+              ], 
+              [
+                29, 
+                1
+              ], 
+              [
+                65, 
+                1
+              ]
+            ], 
+            "n": 13, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                13
+              ]
+            ], 
+            "total_cyclomatic_complexity": 154, 
+            "total_number_of_functions": 108, 
+            "total_number_of_lines": 1248
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                54
+              ], 
+              [
+                "classdef", 
+                7
+              ], 
+              [
+                "module", 
+                2
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                8
+              ], 
+              [
+                "classdef", 
+                13
+              ], 
+              [
+                "functiondef", 
+                129
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "functiondef", 
+                6447
+              ], 
+              [
+                "classdef", 
+                1505
+              ], 
+              [
+                "module", 
+                56
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.2713178294573644, 
+            "average_number_of_lines": 10.426356589147288, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                58
+              ], 
+              [
+                2, 
+                32
+              ], 
+              [
+                3, 
+                16
+              ], 
+              [
+                4, 
+                9
+              ], 
+              [
+                5, 
+                8
+              ], 
+              [
+                6, 
+                1
+              ], 
+              [
+                7, 
+                2
+              ], 
+              [
+                8, 
+                2
+              ], 
+              [
+                11, 
+                1
+              ]
+            ], 
+            "n": 129, 
+            "n_errors": 1, 
+            "naming_conventions": [
+              [
+                "mixedCase", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                109
+              ], 
+              [
+                "special_variable", 
+                14
+              ], 
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 293, 
+            "total_number_of_lines": 1345
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy", 
+              "datetime", 
+              "hashlib", 
+              "uuid", 
+              "os", 
+              "gzip", 
+              "os.path", 
+              "sys", 
+              "six", 
+              "cjson", 
+              "marshal", 
+              "cPickle", 
+              "pickle", 
+              "json", 
+              "blitzdb", 
+              "operator", 
+              "re", 
+              "time"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "defaultdict", 
+                  "PickleSerializer", 
+                  "JsonEncoder", 
+                  "JsonSerializer", 
+                  "MarshalSerializer", 
+                  "Index", 
+                  "TransactionalIndex", 
+                  "Store", 
+                  "TransactionalStore", 
+                  "CJsonSerializer", 
+                  "compile_query", 
+                  "Backend", 
+                  "NotInTransaction", 
+                  "QuerySet", 
+                  "NonUnique", 
+                  "reduce"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 7.069182389937107, 
+            "n": 159, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                158
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/file/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Store", 
+                  "TransactionalStore", 
+                  "Index", 
+                  "TransactionalIndex", 
+                  "NonUnique", 
+                  "Backend", 
+                  "QuerySet"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/backends/file/backend.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 33.0, 
+            "average_number_of_functions": 19.5, 
+            "average_number_of_lines": 265.5, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ], 
+              [
+                65, 
+                1
+              ]
+            ], 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 66, 
+            "total_number_of_functions": 39, 
+            "total_number_of_lines": 531
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                6
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "functiondef", 
+                39
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                898
+              ], 
+              [
+                "functiondef", 
+                2248
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.769230769230769, 
+            "average_number_of_lines": 12.58974358974359, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                14
+              ], 
+              [
+                2, 
+                11
+              ], 
+              [
+                3, 
+                4
+              ], 
+              [
+                4, 
+                2
+              ], 
+              [
+                5, 
+                5
+              ], 
+              [
+                8, 
+                2
+              ], 
+              [
+                11, 
+                1
+              ]
+            ], 
+            "n": 39, 
+            "n_errors": 1, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                34
+              ], 
+              [
+                "special_variable", 
+                1
+              ], 
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 108, 
+            "total_number_of_lines": 491
+          }, 
+          "imports": {
+            "imported_modules": [
+              "uuid", 
+              "blitzdb", 
+              "six", 
+              "os", 
+              "os.path"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "JsonSerializer", 
+                  "MarshalSerializer", 
+                  "PickleSerializer", 
+                  "Index", 
+                  "TransactionalIndex", 
+                  "Store", 
+                  "TransactionalStore", 
+                  "CJsonSerializer", 
+                  "defaultdict", 
+                  "compile_query", 
+                  "Backend", 
+                  "NotInTransaction", 
+                  "QuerySet"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 7.625, 
+            "n": 64, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                64
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/file/index.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 15.0, 
+            "average_number_of_functions": 9.0, 
+            "average_number_of_lines": 153.66666666666666, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ], 
+              [
+                15, 
+                1
+              ], 
+              [
+                29, 
+                1
+              ]
+            ], 
+            "n": 3, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                3
+              ]
+            ], 
+            "total_cyclomatic_complexity": 45, 
+            "total_number_of_functions": 27, 
+            "total_number_of_lines": 461
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                3
+              ], 
+              [
+                "functiondef", 
+                27
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                3
+              ], 
+              [
+                "functiondef", 
+                27
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                19
+              ], 
+              [
+                "classdef", 
+                513
+              ], 
+              [
+                "functiondef", 
+                3107
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.5555555555555554, 
+            "average_number_of_lines": 14.962962962962964, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                9
+              ], 
+              [
+                2, 
+                7
+              ], 
+              [
+                3, 
+                4
+              ], 
+              [
+                4, 
+                3
+              ], 
+              [
+                5, 
+                3
+              ], 
+              [
+                7, 
+                1
+              ]
+            ], 
+            "n": 27, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                25
+              ], 
+              [
+                "special_variable", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 69, 
+            "total_number_of_lines": 404
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "NotInTransaction", 
+                  "PickleSerializer", 
+                  "JsonEncoder", 
+                  "defaultdict", 
+                  "QuerySet"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 6.055555555555555, 
+            "n": 54, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                54
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/file/queries.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                21
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                21
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                37
+              ], 
+              [
+                "functiondef", 
+                1092
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.8571428571428572, 
+            "average_number_of_lines": 12.095238095238095, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                10
+              ], 
+              [
+                2, 
+                8
+              ], 
+              [
+                3, 
+                2
+              ], 
+              [
+                7, 
+                1
+              ]
+            ], 
+            "n": 21, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "mixedCase", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                19
+              ]
+            ], 
+            "total_cyclomatic_complexity": 39, 
+            "total_number_of_lines": 254
+          }, 
+          "imports": {
+            "imported_modules": [
+              "operator", 
+              "re", 
+              "six"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "reduce"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 11.266666666666667, 
+            "n": 15, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                15
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/file/queryset.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 12.0, 
+            "average_number_of_functions": 16.0, 
+            "average_number_of_lines": 93.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                12, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 12, 
+            "total_number_of_functions": 16, 
+            "total_number_of_lines": 93
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                16
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.6875, 
+            "average_number_of_lines": 4.625, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                12
+              ], 
+              [
+                2, 
+                1
+              ], 
+              [
+                3, 
+                1
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                6, 
+                1
+              ]
+            ], 
+            "n": 16, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "special_variable", 
+                9
+              ], 
+              [
+                "plain_or_underscore", 
+                7
+              ]
+            ], 
+            "total_cyclomatic_complexity": 27, 
+            "total_number_of_lines": 74
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy", 
+              "time"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "QuerySet"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 5.684210526315789, 
+            "n": 19, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                18
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/file/serializers.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.75, 
+            "average_number_of_functions": 2.0, 
+            "average_number_of_lines": 11.25, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                3
+              ], 
+              [
+                4, 
+                1
+              ]
+            ], 
+            "n": 4, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 7, 
+            "total_number_of_functions": 8, 
+            "total_number_of_lines": 45
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                4
+              ], 
+              [
+                "functiondef", 
+                8
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.375, 
+            "average_number_of_lines": 4.125, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                6
+              ], 
+              [
+                2, 
+                1
+              ], 
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 8, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                8
+              ]
+            ], 
+            "total_cyclomatic_complexity": 11, 
+            "total_number_of_lines": 33
+          }, 
+          "imports": {
+            "imported_modules": [
+              "sys", 
+              "six", 
+              "cjson", 
+              "marshal", 
+              "cPickle", 
+              "pickle", 
+              "json"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "JsonEncoder"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/backends/file/store.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 10.5, 
+            "average_number_of_functions": 8.5, 
+            "average_number_of_lines": 55.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                7, 
+                1
+              ], 
+              [
+                14, 
+                1
+              ]
+            ], 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 21, 
+            "total_number_of_functions": 17, 
+            "total_number_of_lines": 110
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "functiondef", 
+                17
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                94
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.1176470588235294, 
+            "average_number_of_lines": 4.882352941176471, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                7
+              ], 
+              [
+                2, 
+                4
+              ], 
+              [
+                3, 
+                3
+              ], 
+              [
+                4, 
+                3
+              ]
+            ], 
+            "n": 17, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                15
+              ], 
+              [
+                "special_variable", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 36, 
+            "total_number_of_lines": 83
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy", 
+              "datetime", 
+              "hashlib", 
+              "uuid", 
+              "os", 
+              "gzip", 
+              "os.path"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "defaultdict", 
+                  "PickleSerializer"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 4.571428571428571, 
+            "n": 7, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                7
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/file/utils.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 3.0, 
+            "average_number_of_functions": 1.0, 
+            "average_number_of_lines": 8.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 3, 
+            "total_number_of_functions": 1, 
+            "total_number_of_lines": 8
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 3.0, 
+            "average_number_of_lines": 6.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 3, 
+            "total_number_of_lines": 6
+          }, 
+          "imports": {
+            "imported_modules": [
+              "datetime", 
+              "json"
+            ], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/backends/mongo": {
+          "classes": {
+            "average_cyclomatic_complexity": 47.5, 
+            "average_number_of_functions": 22.0, 
+            "average_number_of_lines": 247.5, 
+            "cyclomatic_complexity_distribution": [
+              [
+                18, 
+                1
+              ], 
+              [
+                77, 
+                1
+              ]
+            ], 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 95, 
+            "total_number_of_functions": 44, 
+            "total_number_of_lines": 495
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                5
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                3
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "functiondef", 
+                44
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                429
+              ], 
+              [
+                "functiondef", 
+                523
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 3.4318181818181817, 
+            "average_number_of_lines": 11.613636363636363, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                18
+              ], 
+              [
+                2, 
+                6
+              ], 
+              [
+                3, 
+                6
+              ], 
+              [
+                4, 
+                6
+              ], 
+              [
+                5, 
+                1
+              ], 
+              [
+                6, 
+                3
+              ], 
+              [
+                8, 
+                2
+              ], 
+              [
+                10, 
+                1
+              ], 
+              [
+                30, 
+                1
+              ]
+            ], 
+            "n": 44, 
+            "n_errors": 2, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                36
+              ], 
+              [
+                "special_variable", 
+                8
+              ]
+            ], 
+            "total_cyclomatic_complexity": 151, 
+            "total_number_of_lines": 511
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pymongo", 
+              "logging", 
+              "traceback", 
+              "uuid", 
+              "six", 
+              "abc"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "QuerySet", 
+                  "wraps", 
+                  "Backend", 
+                  "Document", 
+                  "NotInTransaction", 
+                  "defaultdict"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 9.012820512820513, 
+            "n": 78, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                76
+              ], 
+              [
+                "special_variable", 
+                1
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/mongo/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Backend", 
+                  "QuerySet"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/backends/mongo/backend.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 77.0, 
+            "average_number_of_functions": 29.0, 
+            "average_number_of_lines": 394.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                77, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 77, 
+            "total_number_of_functions": 29, 
+            "total_number_of_lines": 394
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                5
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                29
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                425
+              ], 
+              [
+                "functiondef", 
+                523
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 4.103448275862069, 
+            "average_number_of_lines": 14.96551724137931, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                7
+              ], 
+              [
+                2, 
+                6
+              ], 
+              [
+                3, 
+                5
+              ], 
+              [
+                4, 
+                5
+              ], 
+              [
+                5, 
+                1
+              ], 
+              [
+                6, 
+                2
+              ], 
+              [
+                8, 
+                1
+              ], 
+              [
+                10, 
+                1
+              ], 
+              [
+                30, 
+                1
+              ]
+            ], 
+            "n": 29, 
+            "n_errors": 2, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                28
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 119, 
+            "total_number_of_lines": 434
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pymongo", 
+              "logging", 
+              "traceback", 
+              "uuid", 
+              "six", 
+              "abc"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "NotInTransaction", 
+                  "Backend", 
+                  "QuerySet", 
+                  "defaultdict"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 9.666666666666666, 
+            "n": 60, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                59
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/mongo/queryset.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 18.0, 
+            "average_number_of_functions": 15.0, 
+            "average_number_of_lines": 101.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                18, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 18, 
+            "total_number_of_functions": 15, 
+            "total_number_of_lines": 101
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                15
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                4
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.1333333333333333, 
+            "average_number_of_lines": 5.133333333333334, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                11
+              ], 
+              [
+                3, 
+                1
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                6, 
+                1
+              ], 
+              [
+                8, 
+                1
+              ]
+            ], 
+            "n": 15, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                8
+              ], 
+              [
+                "special_variable", 
+                7
+              ]
+            ], 
+            "total_cyclomatic_complexity": 32, 
+            "total_number_of_lines": 77
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "QuerySet", 
+                  "wraps"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 6.833333333333333, 
+            "n": 18, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                17
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/sql": {
+          "classes": {
+            "average_cyclomatic_complexity": 4.0, 
+            "average_number_of_functions": 12.5, 
+            "average_number_of_lines": 76.5, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ], 
+              [
+                7, 
+                1
+              ]
+            ], 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 8, 
+            "total_number_of_functions": 25, 
+            "total_number_of_lines": 153
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ], 
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "classdef", 
+                2
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                4
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "functiondef", 
+                25
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                336
+              ], 
+              [
+                "functiondef", 
+                332
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.24, 
+            "average_number_of_lines": 3.84, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                20
+              ], 
+              [
+                2, 
+                4
+              ], 
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 25, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                17
+              ], 
+              [
+                "special_variable", 
+                8
+              ]
+            ], 
+            "total_cyclomatic_complexity": 31, 
+            "total_number_of_lines": 96
+          }, 
+          "imports": {
+            "imported_modules": [
+              "six", 
+              "uuid", 
+              "abc"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "QuerySet", 
+                  "wraps", 
+                  "Document", 
+                  "Backend", 
+                  "NotInTransaction"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 8.5, 
+            "n": 14, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                13
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/sql/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/backends/sql/backend.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 7.0, 
+            "average_number_of_functions": 12.0, 
+            "average_number_of_lines": 104.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                7, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 7, 
+            "total_number_of_functions": 12, 
+            "total_number_of_lines": 104
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                12
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                332
+              ], 
+              [
+                "functiondef", 
+                332
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.5, 
+            "average_number_of_lines": 5.75, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                7
+              ], 
+              [
+                2, 
+                4
+              ], 
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 12, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                11
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 18, 
+            "total_number_of_lines": 69
+          }, 
+          "imports": {
+            "imported_modules": [
+              "six", 
+              "uuid", 
+              "abc"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "Backend", 
+                  "NotInTransaction", 
+                  "QuerySet"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 8.916666666666666, 
+            "n": 12, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                12
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/backends/sql/index.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/backends/sql/queryset.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 13.0, 
+            "average_number_of_lines": 49.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_functions": 13, 
+            "total_number_of_lines": 49
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                13
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                4
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 2.076923076923077, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                13
+              ]
+            ], 
+            "n": 13, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                6
+              ], 
+              [
+                "special_variable", 
+                7
+              ]
+            ], 
+            "total_cyclomatic_complexity": 13, 
+            "total_number_of_lines": 27
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "QuerySet", 
+                  "wraps"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 6.0, 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/document.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 8.6, 
+            "average_number_of_functions": 8.0, 
+            "average_number_of_lines": 86.2, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                3
+              ], 
+              [
+                3, 
+                1
+              ], 
+              [
+                37, 
+                1
+              ]
+            ], 
+            "n": 5, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                5
+              ]
+            ], 
+            "total_cyclomatic_complexity": 43, 
+            "total_number_of_functions": 40, 
+            "total_number_of_lines": 431
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                10
+              ], 
+              [
+                "classdef", 
+                2
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                5
+              ], 
+              [
+                "functiondef", 
+                38
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                1874
+              ], 
+              [
+                "functiondef", 
+                4249
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.0526315789473686, 
+            "average_number_of_lines": 8.657894736842104, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                19
+              ], 
+              [
+                2, 
+                9
+              ], 
+              [
+                3, 
+                5
+              ], 
+              [
+                4, 
+                2
+              ], 
+              [
+                5, 
+                1
+              ], 
+              [
+                6, 
+                1
+              ], 
+              [
+                7, 
+                1
+              ]
+            ], 
+            "n": 38, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                19
+              ], 
+              [
+                "special_variable", 
+                19
+              ]
+            ], 
+            "total_cyclomatic_complexity": 78, 
+            "total_number_of_lines": 329
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy", 
+              "uuid", 
+              "logging", 
+              "six"
+            ], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 5.741935483870968, 
+            "n": 31, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                27
+              ], 
+              [
+                "special_variable", 
+                3
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/queryset.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 7.0, 
+            "average_number_of_lines": 64.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_functions": 7, 
+            "total_number_of_lines": 64
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                7
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                7
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                253
+              ], 
+              [
+                "functiondef", 
+                571
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 6.142857142857143, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                7
+              ]
+            ], 
+            "n": 7, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "special_variable", 
+                5
+              ], 
+              [
+                "plain_or_underscore", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 7, 
+            "total_number_of_lines": 43
+          }, 
+          "imports": {
+            "imported_modules": [
+              "abc"
+            ], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 8.0, 
+            "n": 5, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                2
+              ], 
+              [
+                "special_variable", 
+                1
+              ], 
+              [
+                "CamelCase", 
+                2
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.3333333333333333, 
+            "average_number_of_lines": 3.6666666666666665, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                12
+              ]
+            ], 
+            "n": 12, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                12
+              ]
+            ], 
+            "total_cyclomatic_complexity": 12, 
+            "total_number_of_functions": 4, 
+            "total_number_of_lines": 44
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                4
+              ], 
+              [
+                "module", 
+                0
+              ], 
+              [
+                "classdef", 
+                1
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                20
+              ], 
+              [
+                "functiondef", 
+                91
+              ], 
+              [
+                "classdef", 
+                12
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                62
+              ], 
+              [
+                "functiondef", 
+                266
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.5934065934065933, 
+            "average_number_of_lines": 18.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                61
+              ], 
+              [
+                2, 
+                15
+              ], 
+              [
+                3, 
+                10
+              ], 
+              [
+                4, 
+                2
+              ], 
+              [
+                5, 
+                2
+              ], 
+              [
+                6, 
+                1
+              ]
+            ], 
+            "n": 91, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                90
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 145, 
+            "total_number_of_lines": 1638
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pymongo", 
+              "tempfile", 
+              "subprocess", 
+              "pytest", 
+              "faker", 
+              "math", 
+              "random", 
+              "copy", 
+              "six"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Backend", 
+                  "Actor", 
+                  "Director", 
+                  "Movie", 
+                  "generate_test_data", 
+                  "absolute_import", 
+                  "*", 
+                  "Document", 
+                  "test_mongo", 
+                  "mongodb_backend", 
+                  "TransactionalStore", 
+                  "NonUnique"
+                ]
+              ]
+            ], 
+            "n_errors": 9
+          }, 
+          "variables": {
+            "average_length": 7.0, 
+            "n": 172, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                172
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/tests/fixtures.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                16
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "functiondef", 
+                54
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.375, 
+            "average_number_of_lines": 4.3125, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                13
+              ], 
+              [
+                2, 
+                2
+              ], 
+              [
+                5, 
+                1
+              ]
+            ], 
+            "n": 16, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                16
+              ]
+            ], 
+            "total_cyclomatic_complexity": 22, 
+            "total_number_of_lines": 69
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pymongo", 
+              "tempfile", 
+              "subprocess", 
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Backend", 
+                  "Actor", 
+                  "Director", 
+                  "Movie", 
+                  "generate_test_data"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 6.428571428571429, 
+            "n": 7, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                7
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/helpers": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.0, 
+            "average_number_of_lines": 2.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                4
+              ]
+            ], 
+            "n": 4, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 4, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 8
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                2
+              ], 
+              [
+                "classdef", 
+                4
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 6.0, 
+            "average_number_of_lines": 62.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                6, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 6, 
+            "total_number_of_lines": 62
+          }, 
+          "imports": {
+            "imported_modules": [
+              "faker", 
+              "math", 
+              "random"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 7.583333333333333, 
+            "n": 12, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                12
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/helpers/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/tests/helpers/movie_data.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.0, 
+            "average_number_of_lines": 2.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                4
+              ]
+            ], 
+            "n": 4, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 4, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 8
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                4
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 6.0, 
+            "average_number_of_lines": 62.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                6, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 6, 
+            "total_number_of_lines": 62
+          }, 
+          "imports": {
+            "imported_modules": [
+              "faker", 
+              "math", 
+              "random"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 7.583333333333333, 
+            "n": 12, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                12
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/mongo": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                4
+              ], 
+              [
+                "functiondef", 
+                6
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.6666666666666667, 
+            "average_number_of_lines": 16.5, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                3
+              ], 
+              [
+                2, 
+                2
+              ], 
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 6, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                6
+              ]
+            ], 
+            "total_cyclomatic_complexity": 10, 
+            "total_number_of_lines": 99
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "test_mongo", 
+                  "mongodb_backend"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 5.6, 
+            "n": 10, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                10
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/mongo/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/tests/mongo/test_complex.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.0, 
+            "average_number_of_lines": 19.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                2, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 2, 
+            "total_number_of_lines": 19
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "test_mongo", 
+                  "mongodb_backend"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 4.666666666666667, 
+            "n": 3, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                3
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/mongo/test_dots.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.0, 
+            "average_number_of_lines": 23.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                2, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 2, 
+            "total_number_of_lines": 23
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "test_mongo", 
+                  "mongodb_backend"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 6.5, 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                2
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/mongo/test_update.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                4
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.5, 
+            "average_number_of_lines": 14.25, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                3
+              ], 
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 4, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 6, 
+            "total_number_of_lines": 57
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document", 
+                  "test_mongo", 
+                  "mongodb_backend"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 5.8, 
+            "n": 5, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                5
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_autoload.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.0, 
+            "average_number_of_lines": 3.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                2
+              ]
+            ], 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 2, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 6
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                2
+              ], 
+              [
+                "classdef", 
+                2
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.5, 
+            "average_number_of_lines": 26.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ], 
+              [
+                2, 
+                1
+              ]
+            ], 
+            "n": 2, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 3, 
+            "total_number_of_lines": 52
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "absolute_import", 
+                  "*", 
+                  "Actor", 
+                  "Movie"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 11.333333333333334, 
+            "n": 3, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                3
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_dbref_includes.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.0, 
+            "average_number_of_lines": 3.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                2
+              ]
+            ], 
+            "n": 2, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 2, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 6
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "classdef", 
+                2
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 3.0, 
+            "average_number_of_lines": 34.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 3, 
+            "total_number_of_lines": 34
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "absolute_import", 
+                  "*", 
+                  "Actor", 
+                  "Movie"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 8.8, 
+            "n": 5, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                5
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_documents.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.6666666666666666, 
+            "average_number_of_lines": 4.333333333333333, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                3
+              ]
+            ], 
+            "n": 3, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                3
+              ]
+            ], 
+            "total_cyclomatic_complexity": 3, 
+            "total_number_of_functions": 2, 
+            "total_number_of_lines": 13
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ], 
+              [
+                "classdef", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                12
+              ], 
+              [
+                "classdef", 
+                3
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.75, 
+            "average_number_of_lines": 15.666666666666666, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                8
+              ], 
+              [
+                2, 
+                2
+              ], 
+              [
+                4, 
+                1
+              ], 
+              [
+                5, 
+                1
+              ]
+            ], 
+            "n": 12, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                11
+              ], 
+              [
+                "special_variable", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 21, 
+            "total_number_of_lines": 188
+          }, 
+          "imports": {
+            "imported_modules": [
+              "copy", 
+              "six", 
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Document"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 5.090909090909091, 
+            "n": 11, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                11
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_exceptions.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                2
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                2
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "functiondef", 
+                131
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 2.0, 
+            "average_number_of_lines": 15.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ], 
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 2, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 4, 
+            "total_number_of_lines": 30
+          }, 
+          "imports": {
+            "imported_modules": [
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Actor", 
+                  "Director"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }, 
+        "blitzdb/tests/test_file_stores.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                3
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.6666666666666667, 
+            "average_number_of_lines": 15.666666666666666, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                2
+              ], 
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 3, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                3
+              ]
+            ], 
+            "total_cyclomatic_complexity": 5, 
+            "total_number_of_lines": 47
+          }, 
+          "imports": {
+            "imported_modules": [
+              "tempfile", 
+              "subprocess", 
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "TransactionalStore"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 5.166666666666667, 
+            "n": 6, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                6
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_hooks.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 2.0, 
+            "average_number_of_lines": 11.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_functions": 2, 
+            "total_number_of_lines": 11
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "functiondef", 
+                4
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "classdef", 
+                62
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 5.25, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                4
+              ]
+            ], 
+            "n": 4, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 4, 
+            "total_number_of_lines": 21
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "absolute_import", 
+                  "*", 
+                  "Document"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 8.666666666666666, 
+            "n": 3, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                3
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_indexes.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                2
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.5, 
+            "average_number_of_lines": 11.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ], 
+              [
+                2, 
+                1
+              ]
+            ], 
+            "n": 2, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                2
+              ]
+            ], 
+            "total_cyclomatic_complexity": 3, 
+            "total_number_of_lines": 22
+          }, 
+          "imports": {
+            "imported_modules": [
+              "tempfile", 
+              "pytest"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Actor", 
+                  "*", 
+                  "absolute_import", 
+                  "NonUnique"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 6.2, 
+            "n": 5, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                5
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_query_operators.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                12
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 40.083333333333336, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                12
+              ]
+            ], 
+            "n": 12, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                12
+              ]
+            ], 
+            "total_cyclomatic_complexity": 12, 
+            "total_number_of_lines": 481
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "*"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 6.605633802816901, 
+            "n": 71, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                71
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_querying.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                18
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "functiondef", 
+                81
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.9444444444444444, 
+            "average_number_of_lines": 15.333333333333334, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                8
+              ], 
+              [
+                2, 
+                4
+              ], 
+              [
+                3, 
+                5
+              ], 
+              [
+                4, 
+                1
+              ]
+            ], 
+            "n": 18, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                18
+              ]
+            ], 
+            "total_cyclomatic_complexity": 35, 
+            "total_number_of_lines": 276
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "absolute_import", 
+                  "*", 
+                  "Actor", 
+                  "Director", 
+                  "Movie"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 7.44, 
+            "n": 25, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                25
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_sorting.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 3.0, 
+            "average_number_of_lines": 47.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                3, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 3, 
+            "total_number_of_lines": 47
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "absolute_import", 
+                  "*", 
+                  "Actor"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 8.6, 
+            "n": 5, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                5
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_transactions.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                4
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.25, 
+            "average_number_of_lines": 17.75, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                3
+              ], 
+              [
+                2, 
+                1
+              ]
+            ], 
+            "n": 4, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                4
+              ]
+            ], 
+            "total_cyclomatic_complexity": 5, 
+            "total_number_of_lines": 71
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "absolute_import", 
+                  "*", 
+                  "Movie"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 12.4, 
+            "n": 5, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                5
+              ]
+            ]
+          }
+        }, 
+        "blitzdb/tests/test_update.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "functiondef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                7
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.2857142857142858, 
+            "average_number_of_lines": 19.857142857142858, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                5
+              ], 
+              [
+                2, 
+                2
+              ]
+            ], 
+            "n": 7, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                7
+              ]
+            ], 
+            "total_cyclomatic_complexity": 9, 
+            "total_number_of_lines": 139
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "absolute_import", 
+                  "*", 
+                  "Actor"
+                ]
+              ]
+            ], 
+            "n_errors": 1
+          }, 
+          "variables": {
+            "average_length": 7.5, 
+            "n": 4, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                4
+              ]
+            ]
+          }
+        }, 
+        "docs": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.0, 
+            "average_number_of_lines": 79.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 79
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "classdef", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                3
+              ], 
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                86
+              ], 
+              [
+                "functiondef", 
+                32
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 4.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_lines": 4
+          }, 
+          "imports": {
+            "imported_modules": [
+              "os", 
+              "sys"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Style", 
+                  "Keyword", 
+                  "Name", 
+                  "Comment", 
+                  "String", 
+                  "Error", 
+                  "Number", 
+                  "Operator", 
+                  "Generic", 
+                  "Whitespace", 
+                  "Punctuation", 
+                  "Other", 
+                  "Literal"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 11.96, 
+            "n": 25, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                22
+              ], 
+              [
+                "special_variable", 
+                2
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "docs/_themes": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.0, 
+            "average_number_of_lines": 79.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 79
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "classdef", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                2
+              ], 
+              [
+                "functiondef", 
+                1
+              ], 
+              [
+                "classdef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                86
+              ], 
+              [
+                "functiondef", 
+                32
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 4.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_lines": 4
+          }, 
+          "imports": {
+            "imported_modules": [
+              "os"
+            ], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Style", 
+                  "Keyword", 
+                  "Name", 
+                  "Comment", 
+                  "String", 
+                  "Error", 
+                  "Number", 
+                  "Operator", 
+                  "Generic", 
+                  "Whitespace", 
+                  "Punctuation", 
+                  "Other", 
+                  "Literal"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 10.857142857142858, 
+            "n": 7, 
+            "naming_conventions": [
+              [
+                "special_variable", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                4
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "docs/_themes/flask_theme_support.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_functions": 0.0, 
+            "average_number_of_lines": 79.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "naming_conventions": [
+              [
+                "CamelCase", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 79
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "classdef", 
+                0
+              ], 
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "classdef", 
+                1
+              ], 
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "Style", 
+                  "Keyword", 
+                  "Name", 
+                  "Comment", 
+                  "String", 
+                  "Error", 
+                  "Number", 
+                  "Operator", 
+                  "Generic", 
+                  "Whitespace", 
+                  "Punctuation", 
+                  "Other", 
+                  "Literal"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 11.666666666666666, 
+            "n": 3, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                3
+              ]
+            ]
+          }
+        }, 
+        "docs/_themes/sphinx_rtd_theme": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                86
+              ], 
+              [
+                "functiondef", 
+                32
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 4.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_lines": 4
+          }, 
+          "imports": {
+            "imported_modules": [
+              "os"
+            ], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 10.25, 
+            "n": 4, 
+            "naming_conventions": [
+              [
+                "special_variable", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                1
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "docs/_themes/sphinx_rtd_theme/__init__.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ], 
+              [
+                "functiondef", 
+                1
+              ]
+            ], 
+            "total_docstring_length": [
+              [
+                "module", 
+                86
+              ], 
+              [
+                "functiondef", 
+                32
+              ]
+            ]
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 1.0, 
+            "average_number_of_lines": 4.0, 
+            "cyclomatic_complexity_distribution": [
+              [
+                1, 
+                1
+              ]
+            ], 
+            "n": 1, 
+            "n_errors": 0, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                1
+              ]
+            ], 
+            "total_cyclomatic_complexity": 1, 
+            "total_number_of_lines": 4
+          }, 
+          "imports": {
+            "imported_modules": [
+              "os"
+            ], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 10.25, 
+            "n": 4, 
+            "naming_conventions": [
+              [
+                "special_variable", 
+                2
+              ], 
+              [
+                "plain_or_underscore", 
+                1
+              ], 
+              [
+                "CamelCase", 
+                1
+              ]
+            ]
+          }
+        }, 
+        "docs/source": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [
+              "os", 
+              "sys"
+            ], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 12.38888888888889, 
+            "n": 18, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                18
+              ]
+            ]
+          }
+        }, 
+        "docs/source/conf.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [
+              "os", 
+              "sys"
+            ], 
+            "imported_names": [], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 12.38888888888889, 
+            "n": 18, 
+            "naming_conventions": [
+              [
+                "plain_or_underscore", 
+                18
+              ]
+            ]
+          }
+        }, 
+        "setup.py": {
+          "classes": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_functions": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_functions": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "docstrings": {
+            "n_docstrings": [
+              [
+                "module", 
+                0
+              ]
+            ], 
+            "n_objects": [
+              [
+                "module", 
+                1
+              ]
+            ], 
+            "total_docstring_length": []
+          }, 
+          "functions": {
+            "average_cyclomatic_complexity": 0, 
+            "average_number_of_lines": 0, 
+            "cyclomatic_complexity_distribution": [], 
+            "n": 0, 
+            "n_errors": 0, 
+            "naming_conventions": [], 
+            "total_cyclomatic_complexity": 0, 
+            "total_number_of_lines": 0
+          }, 
+          "imports": {
+            "imported_modules": [], 
+            "imported_names": [
+              [
+                "foo", 
+                [
+                  "setup", 
+                  "find_packages"
+                ]
+              ]
+            ], 
+            "n_errors": 0
+          }, 
+          "variables": {
+            "average_length": 0, 
+            "n": 0, 
+            "naming_conventions": []
+          }
+        }
+      }, 
+      "metrics": {
+        "": {
+          "average_number_of_characters": 4235.431818181818, 
+          "average_number_of_lines": 126.4090909090909, 
+          "number_of_files": 44, 
+          "total_number_of_characters": 186359, 
+          "total_number_of_lines": 5562
+        }, 
+        "blitzdb": {
+          "average_number_of_characters": 4260.275, 
+          "average_number_of_lines": 127.875, 
+          "number_of_files": 40, 
+          "total_number_of_characters": 170411, 
+          "total_number_of_lines": 5115
+        }, 
+        "blitzdb/__init__.py": {
+          "average_number_of_characters": 199.0, 
+          "average_number_of_lines": 9.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 199, 
+          "total_number_of_lines": 9
+        }, 
+        "blitzdb/backends": {
+          "average_number_of_characters": 5341.35294117647, 
+          "average_number_of_lines": 156.2941176470588, 
+          "number_of_files": 17, 
+          "total_number_of_characters": 90803, 
+          "total_number_of_lines": 2657
+        }, 
+        "blitzdb/backends/__init__.py": {
+          "average_number_of_characters": 0.0, 
+          "average_number_of_lines": 1.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 0, 
+          "total_number_of_lines": 1
+        }, 
+        "blitzdb/backends/base.py": {
+          "average_number_of_characters": 15717.0, 
+          "average_number_of_lines": 368.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 15717, 
+          "total_number_of_lines": 368
+        }, 
+        "blitzdb/backends/file": {
+          "average_number_of_characters": 6346.875, 
+          "average_number_of_lines": 197.75, 
+          "number_of_files": 8, 
+          "total_number_of_characters": 50775, 
+          "total_number_of_lines": 1582
+        }, 
+        "blitzdb/backends/file/__init__.py": {
+          "average_number_of_characters": 245.0, 
+          "average_number_of_lines": 5.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 245, 
+          "total_number_of_lines": 5
+        }, 
+        "blitzdb/backends/file/backend.py": {
+          "average_number_of_characters": 20004.0, 
+          "average_number_of_lines": 589.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 20004, 
+          "total_number_of_lines": 589
+        }, 
+        "blitzdb/backends/file/index.py": {
+          "average_number_of_characters": 15250.0, 
+          "average_number_of_lines": 476.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 15250, 
+          "total_number_of_lines": 476
+        }, 
+        "blitzdb/backends/file/queries.py": {
+          "average_number_of_characters": 6643.0, 
+          "average_number_of_lines": 197.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 6643, 
+          "total_number_of_lines": 197
+        }, 
+        "blitzdb/backends/file/queryset.py": {
+          "average_number_of_characters": 3071.0, 
+          "average_number_of_lines": 99.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 3071, 
+          "total_number_of_lines": 99
+        }, 
+        "blitzdb/backends/file/serializers.py": {
+          "average_number_of_characters": 1627.0, 
+          "average_number_of_lines": 74.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1627, 
+          "total_number_of_lines": 74
+        }, 
+        "blitzdb/backends/file/store.py": {
+          "average_number_of_characters": 3642.0, 
+          "average_number_of_lines": 129.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 3642, 
+          "total_number_of_lines": 129
+        }, 
+        "blitzdb/backends/file/utils.py": {
+          "average_number_of_characters": 293.0, 
+          "average_number_of_lines": 13.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 293, 
+          "total_number_of_lines": 13
+        }, 
+        "blitzdb/backends/mongo": {
+          "average_number_of_characters": 6482.0, 
+          "average_number_of_lines": 173.66666666666666, 
+          "number_of_files": 3, 
+          "total_number_of_characters": 19446, 
+          "total_number_of_lines": 521
+        }, 
+        "blitzdb/backends/mongo/__init__.py": {
+          "average_number_of_characters": 104.0, 
+          "average_number_of_lines": 3.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 104, 
+          "total_number_of_lines": 3
+        }, 
+        "blitzdb/backends/mongo/backend.py": {
+          "average_number_of_characters": 16049.0, 
+          "average_number_of_lines": 412.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 16049, 
+          "total_number_of_lines": 412
+        }, 
+        "blitzdb/backends/mongo/queryset.py": {
+          "average_number_of_characters": 3293.0, 
+          "average_number_of_lines": 106.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 3293, 
+          "total_number_of_lines": 106
+        }, 
+        "blitzdb/backends/sql": {
+          "average_number_of_characters": 1216.25, 
+          "average_number_of_lines": 46.25, 
+          "number_of_files": 4, 
+          "total_number_of_characters": 4865, 
+          "total_number_of_lines": 185
+        }, 
+        "blitzdb/backends/sql/__init__.py": {
+          "average_number_of_characters": 0.0, 
+          "average_number_of_lines": 1.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 0, 
+          "total_number_of_lines": 1
+        }, 
+        "blitzdb/backends/sql/backend.py": {
+          "average_number_of_characters": 3998.0, 
+          "average_number_of_lines": 129.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 3998, 
+          "total_number_of_lines": 129
+        }, 
+        "blitzdb/backends/sql/index.py": {
+          "average_number_of_characters": 0.0, 
+          "average_number_of_lines": 1.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 0, 
+          "total_number_of_lines": 1
+        }, 
+        "blitzdb/backends/sql/queryset.py": {
+          "average_number_of_characters": 867.0, 
+          "average_number_of_lines": 54.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 867, 
+          "total_number_of_lines": 54
+        }, 
+        "blitzdb/document.py": {
+          "average_number_of_characters": 15346.0, 
+          "average_number_of_lines": 439.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 15346, 
+          "total_number_of_lines": 439
+        }, 
+        "blitzdb/queryset.py": {
+          "average_number_of_characters": 1675.0, 
+          "average_number_of_lines": 68.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1675, 
+          "total_number_of_lines": 68
+        }, 
+        "blitzdb/tests": {
+          "average_number_of_characters": 3119.4, 
+          "average_number_of_lines": 97.1, 
+          "number_of_files": 20, 
+          "total_number_of_characters": 62388, 
+          "total_number_of_lines": 1942
+        }, 
+        "blitzdb/tests/__init__.py": {
+          "average_number_of_characters": 0.0, 
+          "average_number_of_lines": 1.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 0, 
+          "total_number_of_lines": 1
+        }, 
+        "blitzdb/tests/fixtures.py": {
+          "average_number_of_characters": 3861.0, 
+          "average_number_of_lines": 112.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 3861, 
+          "total_number_of_lines": 112
+        }, 
+        "blitzdb/tests/helpers": {
+          "average_number_of_characters": 987.0, 
+          "average_number_of_lines": 43.5, 
+          "number_of_files": 2, 
+          "total_number_of_characters": 1974, 
+          "total_number_of_lines": 87
+        }, 
+        "blitzdb/tests/helpers/__init__.py": {
+          "average_number_of_characters": 0.0, 
+          "average_number_of_lines": 1.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 0, 
+          "total_number_of_lines": 1
+        }, 
+        "blitzdb/tests/helpers/movie_data.py": {
+          "average_number_of_characters": 1974.0, 
+          "average_number_of_lines": 86.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1974, 
+          "total_number_of_lines": 86
+        }, 
+        "blitzdb/tests/mongo": {
+          "average_number_of_characters": 954.25, 
+          "average_number_of_lines": 32.25, 
+          "number_of_files": 4, 
+          "total_number_of_characters": 3817, 
+          "total_number_of_lines": 129
+        }, 
+        "blitzdb/tests/mongo/__init__.py": {
+          "average_number_of_characters": 0.0, 
+          "average_number_of_lines": 1.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 0, 
+          "total_number_of_lines": 1
+        }, 
+        "blitzdb/tests/mongo/test_complex.py": {
+          "average_number_of_characters": 713.0, 
+          "average_number_of_lines": 29.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 713, 
+          "total_number_of_lines": 29
+        }, 
+        "blitzdb/tests/mongo/test_dots.py": {
+          "average_number_of_characters": 1031.0, 
+          "average_number_of_lines": 31.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1031, 
+          "total_number_of_lines": 31
+        }, 
+        "blitzdb/tests/mongo/test_update.py": {
+          "average_number_of_characters": 2073.0, 
+          "average_number_of_lines": 68.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 2073, 
+          "total_number_of_lines": 68
+        }, 
+        "blitzdb/tests/test_autoload.py": {
+          "average_number_of_characters": 1965.0, 
+          "average_number_of_lines": 62.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1965, 
+          "total_number_of_lines": 62
+        }, 
+        "blitzdb/tests/test_dbref_includes.py": {
+          "average_number_of_characters": 1251.0, 
+          "average_number_of_lines": 43.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1251, 
+          "total_number_of_lines": 43
+        }, 
+        "blitzdb/tests/test_documents.py": {
+          "average_number_of_characters": 4147.0, 
+          "average_number_of_lines": 202.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 4147, 
+          "total_number_of_lines": 202
+        }, 
+        "blitzdb/tests/test_exceptions.py": {
+          "average_number_of_characters": 862.0, 
+          "average_number_of_lines": 38.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 862, 
+          "total_number_of_lines": 38
+        }, 
+        "blitzdb/tests/test_file_stores.py": {
+          "average_number_of_characters": 1268.0, 
+          "average_number_of_lines": 55.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1268, 
+          "total_number_of_lines": 55
+        }, 
+        "blitzdb/tests/test_hooks.py": {
+          "average_number_of_characters": 746.0, 
+          "average_number_of_lines": 41.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 746, 
+          "total_number_of_lines": 41
+        }, 
+        "blitzdb/tests/test_indexes.py": {
+          "average_number_of_characters": 1065.0, 
+          "average_number_of_lines": 35.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1065, 
+          "total_number_of_lines": 35
+        }, 
+        "blitzdb/tests/test_query_operators.py": {
+          "average_number_of_characters": 22230.0, 
+          "average_number_of_lines": 517.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 22230, 
+          "total_number_of_lines": 517
+        }, 
+        "blitzdb/tests/test_querying.py": {
+          "average_number_of_characters": 10202.0, 
+          "average_number_of_lines": 321.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 10202, 
+          "total_number_of_lines": 321
+        }, 
+        "blitzdb/tests/test_sorting.py": {
+          "average_number_of_characters": 1799.0, 
+          "average_number_of_lines": 55.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 1799, 
+          "total_number_of_lines": 55
+        }, 
+        "blitzdb/tests/test_transactions.py": {
+          "average_number_of_characters": 2907.0, 
+          "average_number_of_lines": 85.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 2907, 
+          "total_number_of_lines": 85
+        }, 
+        "blitzdb/tests/test_update.py": {
+          "average_number_of_characters": 4294.0, 
+          "average_number_of_lines": 159.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 4294, 
+          "total_number_of_lines": 159
+        }, 
+        "docs": {
+          "average_number_of_characters": 4305.0, 
+          "average_number_of_lines": 125.66666666666667, 
+          "number_of_files": 3, 
+          "total_number_of_characters": 12915, 
+          "total_number_of_lines": 377
+        }, 
+        "docs/_themes": {
+          "average_number_of_characters": 2251.0, 
+          "average_number_of_lines": 52.5, 
+          "number_of_files": 2, 
+          "total_number_of_characters": 4502, 
+          "total_number_of_lines": 105
+        }, 
+        "docs/_themes/flask_theme_support.py": {
+          "average_number_of_characters": 4131.0, 
+          "average_number_of_lines": 87.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 4131, 
+          "total_number_of_lines": 87
+        }, 
+        "docs/_themes/sphinx_rtd_theme": {
+          "average_number_of_characters": 371.0, 
+          "average_number_of_lines": 18.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 371, 
+          "total_number_of_lines": 18
+        }, 
+        "docs/_themes/sphinx_rtd_theme/__init__.py": {
+          "average_number_of_characters": 371.0, 
+          "average_number_of_lines": 18.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 371, 
+          "total_number_of_lines": 18
+        }, 
+        "docs/source": {
+          "average_number_of_characters": 8413.0, 
+          "average_number_of_lines": 272.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 8413, 
+          "total_number_of_lines": 272
+        }, 
+        "docs/source/conf.py": {
+          "average_number_of_characters": 8413.0, 
+          "average_number_of_lines": 272.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 8413, 
+          "total_number_of_lines": 272
+        }, 
+        "setup.py": {
+          "average_number_of_characters": 3033.0, 
+          "average_number_of_lines": 70.0, 
+          "number_of_files": 1, 
+          "total_number_of_characters": 3033, 
+          "total_number_of_lines": 70
+        }
+      }
+    }
+  }
+}

@@ -1,97 +1,56 @@
-/**
- * @jsx React.DOM
- */
-/*jshint quotmark:false */
-/*jshint white:false */
-/*jshint trailing:false */
-/*jshint newcap:false */
-/*global React, Router*/
+(
+function(){
 
-define(["react",
-        "js/utils",
-        "js/api/snapshot"
-        ],function (
-                    React,
-                    Utils,
-                    SnapshotApi
-                    ) {
-    'use'+' strict';
+    function sunburstModule(d3)
+    {
 
-    var PieChart = React.createClass({
-
-        render : function(){
-            return <div>
-                <div className="chart" ref="chart">foo</div>
-            </div>;
-        },
-
-        componentDidMount : function(){
-            this.initChart(this.props);
-        },
-
-        componentWillReceiveProps : function(props){
-            if (props.data !== this.props.data)
-                this.initChart(props);
-        },
-
-        initChart :function(props)
+        function sunburst(element,data,params)
         {
-            var plot = this.refs["chart"].getDOMNode();
-            var data = props.data;
 
-            while (plot.hasChildNodes())
+            while (element.hasChildNodes())
             {
-                plot.removeChild(plot.firstChild);
+                element.removeChild(element.firstChild);
             }
 
-            var width = plot.offsetWidth;
+            var width = element.offsetWidth;
             var height = width;
             var name_index = 0;
             var count_index = 1;
             var children_index = 3;
 
             var max_depth=3;
-
+            
             var data_slices = [];
             var max_level = 3;
 
-            var svg = d3.select(plot).append("svg")
+            var svg = d3.select(element).append("svg")
                 .attr("width", width)
                 .attr("height", height)
                 .append("g")
                 .attr("transform", "translate(" + width / 2 + "," + height * .52 + ")");
-
+                  
             var minValue = undefined,maxValue = undefined;
 
-            if (props.bounds !== undefined){
-                minValue = d3.min(props.bounds);
-                maxValue = d3.max(props.bounds);
+            if (params.bounds !== undefined){
+                minValue = d3.min(params.bounds);
+                maxValue = d3.max(params.bounds);
             }
-            var goTo;
+
             function processNodeData(nodeData,name,level,start_deg,stop_deg)
             {
-                var total = props.getNodeValue(nodeData.data);
+                var total = nodeData.value;
                 var children = nodeData.children;
                 var current_deg = start_deg;
 
                 if (start_deg == stop_deg)
                     return;
-                var dataSlice = {start : start_deg,stop : stop_deg,name : name,level : level,data : nodeData.data};
+                var dataSlice = {color: nodeData.color,title: nodeData.title,start : start_deg,stop : stop_deg,name : name,level : level,data : nodeData.data};
                 data_slices.push(dataSlice);
 
-                if (!goTo && props.goTo && props.goTo(nodeData))
-                    goTo = dataSlice;
                 for (var childKey in nodeData.children)
                 {
                     child = nodeData.children[childKey];
-                    var value = props.getNodeValue(child.data);
-                    var color = props.getNodeColor(child.data);
-                    if (props.bounds === undefined){
-                        if (minValue === undefined || color <= minValue)
-                            minValue = color;
-                        if (maxValue === undefined || color >= maxValue)
-                            maxValue = color;
-                    }
+                    var value = child.value;
                     var inc_deg = (stop_deg-start_deg)/total*value;
                     var child_start_deg = current_deg;
                     current_deg+=inc_deg;
@@ -99,13 +58,9 @@ define(["react",
                     var span_deg = child_stop_deg-child_start_deg;
                     processNodeData(child,childKey,level+1,child_start_deg,child_stop_deg);
                 }
-            }
+            }            
             processNodeData(data,"",0,0,2.0*Math.PI);
 
-            //var color = d3.scale.linear().domain(d3.range(minValue,maxValue,(maxValue-minValue)/20)).range(['#393b79','#5254a3','#6b6ecf','#9c9ede','#637939','#8ca252','#b5cf6b','#cedb9c','#8c6d31','#bd9e39','#e7ba52','#e7cb94','#843c39','#ad494a','#d6616b','#e7969c','#7b4173','#a55194','#ce6dbd','#de9ed6' ]);
-            var color = d3.scale.linear().domain(d3.range(minValue,maxValue,(maxValue-minValue)/10)).range(['#a50026','#d73027','#f46d43','#fdae61','#fee08b','#d9ef8b','#a6d96a','#66bd63','#1a9850','#006837']);
-
-//            var color = d3.scale.category20c();
             var ref = data_slices[0];
             var next_ref = ref;
             var last_refs = [];
@@ -114,7 +69,7 @@ define(["react",
 
             var thickness = function(level){return baseThickness/(Math.pow(Math.max(0,level-max_level),1.0)+1.0);};
             var radius = function(level){var steps=10;return d3.sum(d3.range(0,steps),function(d){var inc = level*1.0/steps;var x = level*d/steps;return thickness(x)*inc;}) };
-
+                
             var arc = d3.svg.arc()
             .startAngle(function(d) {if(d.level==0){return d.start;}return d.start; })
             .endAngle(function(d) { if(d.level==0){return d.stop;}return d.stop+(d.stop-0.005 > d.start+0.005 ? -0.005 :0); })
@@ -128,42 +83,19 @@ define(["react",
                 slices.append("path")
                 .attr("d", arc)
                 .attr("id",function(d,i){return "chart"+i;})
-                .style("fill", function(d) { return color(d3.max([minValue,d3.min([maxValue,props.getNodeColor(d.data)])]));})
+                .style("fill", function(d) { return d.color;})
                 .on("click",animate)
-                .on("mouseover",function(d){
-                    updateLegend(d);
-                    if(props.onMouseover)
-                        props.onMouseover(d);
+                .on("mousemove",function(d,e){
+                    if(params.legend && params.legend.onMouseover)
+                        params.legend.onMouseover(d,d3.event);
                 })
-                .on("mouseout",function(d){
-                    removeLegend(d);
-                    if(props.onMouseout)
-                        props.onMouseout(d);
+                .on("mouseout",function(d,e){
+                    if(params.legend && params.legend.onMouseout)
+                        params.legend.onMouseout(d,d3.event);
                 })
                 .attr("class","form")
                 .append("svg:title")
                 .text(function(d) { return d.name+","+JSON.stringify(d.data); });
-
-        /*    slices.append("text")
-                .style("font-size", "10px")
-                .append("textPath")
-            .attr("xlink:href",function(d,i){return "#"+elementId+i;})
-                .text(function(d){return d[2]})
-                .attr("pointer-events","none")*/
-
-            var legend = d3.select("#chart"+"_legend")
-
-            function updateLegend(d)
-            {
-                legend.html("<h2>"+d.name+"&nbsp;</h2><p>"+props.getNodeValue(d.data)+" characters</p>");
-                legend.transition().duration(200).style("opacity","1");
-            }
-
-            function removeLegend(d)
-            {
-                legend.transition().duration(1000).style("opacity","0");
-        //        legend.html("<h2>&nbsp;</h2>")
-            }
 
             function getStartAngle(d,ref)
             {
@@ -177,7 +109,7 @@ define(["react",
                     return d.start;
                 }
             }
-
+            
             function getStopAngle(d,ref)
             {
                 if (ref)
@@ -190,7 +122,7 @@ define(["react",
                     return d.start;
                 }
             }
-
+            
             function getLevel(d,ref)
             {
                 if (ref)
@@ -202,7 +134,7 @@ define(["react",
                     return d.level;
                 }
             }
-
+            
             function rebaseTween(new_ref)
             {
                 return function(d)
@@ -217,7 +149,7 @@ define(["react",
                     }
                 }
             }
-
+            
             var animating = false;
             var precision = 0.001;
 
@@ -292,21 +224,24 @@ define(["react",
                         ref = d;
                     }
 
-                    if (props.onClick)
-                        props.onClick(d);
+                    if (params.legend && params.legend.onClick)
+                        params.legend.onClick(d);
 
                     },500);
 
-            };
-            if (goTo)
-                animate(goTo);
+            }
+
         }
 
+        return {sunburst: sunburst};
+    }
 
-    });
+    if (typeof define === "function" && define.amd){
+        define(["d3"],sunburstModule);
+    }
+    else if (typeof module === "object" && module.exports)
+        module.exports = sunburstModule(require('d3'));
+    else
+        window.sunburst = sunburstModule(d3);
 
-
-    return PieChart;
-});
-
-
+}())

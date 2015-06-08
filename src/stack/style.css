@@ -6,15 +6,17 @@ body {
 h1 {
   margin: 26px 0; }
 
-.code-display {
+.stack-chart-canvas {
   position: relative; }
 
-.code-legend {
+.stack-chart-legend {
   position: absolute;
   top: 0;
   left: 0; }
-  .code-legend p {
+  .stack-chart-legend p {
     margin: 0; }
 
 .node {
   position: absolute; }
+
+/*# sourceMappingURL=style.css.map */
