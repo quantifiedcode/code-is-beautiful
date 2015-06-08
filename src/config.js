@@ -12,6 +12,6 @@ var require ={
         exports : "THREE"
     }
   },
-baseUrl : "/",
+baseUrl : "../",
 urlArgs: "bust=" + (new Date()).getTime()
 };
