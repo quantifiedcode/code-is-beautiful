@@ -11,6 +11,7 @@
     "globals"
   ],
   "license": "AGPL",
+  "main" : "src/config.js",
   "private": false,
   "ignore": [
     "**/.*",
