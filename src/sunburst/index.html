@@ -14,12 +14,6 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
               <a class="navbar-brand" href="../">Code is Beautiful!</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
@@ -34,9 +28,18 @@
         </nav>
 
         <div class="container">
-            <h2>Stack <a href="../" class="btn btn-primary">back to index</a></h2>
+            <h2>Sunburst <a href="../" class="btn btn-primary">back to index</a></h2>
             <div class="row">
                 <div class="col-md-4">
+                    <p class="lead">
+                        The sunburst chart is a hierarchical pie chart which maps the directory
+                        structure of the project to a set of circles.<br />
+                        <br />
+                        The size of each segment
+                        (in degrees) is given by the number of lines in a given directory / file.
+                        The color of each segment can be used to represent various metrics, e.g.
+                        the average cyclomatic complexity per line of code.
+                    </p>
                 </div>
                 <div class="col-md-8">
                     <div class="sunburst-canvas" id="sunburst-canvas">

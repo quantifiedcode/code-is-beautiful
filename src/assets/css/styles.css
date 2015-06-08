@@ -23,4 +23,8 @@ h1 {
 .node {
   position: absolute; }
 
+img.thumb{
+    opacity:0.7;
+}
+
 /*# sourceMappingURL=style.css.map */

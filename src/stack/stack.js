@@ -44,13 +44,17 @@ function(){
 
                 if (start_deg == stop_deg)
                     return;
-                var dataSlice = {color : nodeData.color,
+
+                var dataSlice = {
                                  start : start_deg,
                                  stop : stop_deg,
                                  name : name,
-                                 level : level,
-                                 title: nodeData.title,
-                                 data : nodeData.data};
+                                 level : level
+                                };
+
+                for(var key in nodeData)
+                    dataSlice[key] = nodeData[key];
+
                 data_slices.push(dataSlice);
 
                 for (var childKey in nodeData.children)

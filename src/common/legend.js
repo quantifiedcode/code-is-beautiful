@@ -18,9 +18,11 @@ define([],function(){
                 var desiredLeft = (e.offsetX-et.offsetLeft/2);
                 var desiredTop = (e.offsetY-et.offsetTop);
 
-                var style = {position:"absolute",
+                var style = {
+                             position:"absolute",
                              left:desiredLeft+"px",
-                             top:desiredTop+"px"};
+                             top:desiredTop+"px"
+                            };
 
                 var info = legendContent(d,e);
 
