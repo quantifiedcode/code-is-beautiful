@@ -11,6 +11,9 @@ define(['code-city/code-city',
     var legendDiv = $('#code-city-legend')[0];
     var canvasDiv = $('#code-city-canvas')[0];
 
+    var rotateLeftSpan = $('#rotate-left');
+    var rotateRightSpan = $('#rotate-right');
+
     var nodeColorScale = ['#a50026',
                           '#d73027',
                           '#f46d43',
@@ -85,7 +88,34 @@ define(['code-city/code-city',
             //we add color to the elements (using the min/max information)
             dataHelpers.colorize(treeData,'colorValue',nodeColorScale);
 
-            codeCity.codeCity($('#code-city-chart')[0], treeData, graphParams);
+            var codeCityChart = codeCity.codeCity($('#code-city-chart')[0], treeData, graphParams);
+
+            var isRotating = false;
+
+            var startRotate = function(left){
+                isRotating = false;
+                var rotate = function(){
+                    if (!isRotating)
+                        return;
+                    codeCityChart.setCameraRotation(codeCityChart.getCameraRotation()+(left ? -0.01 : 0.01));
+                    setTimeout(rotate,10);
+                }
+                var startRotation = function(){
+                    isRotating = true;
+                    rotate();
+                }
+                setTimeout(startRotation,40);
+            };
+
+            var stopRotate = function(){
+                isRotating = false;
+            }
+
+            rotateLeftSpan.mouseover(startRotate.bind(null,false));
+            rotateRightSpan.mouseover(startRotate.bind(null,true));
+            rotateLeftSpan.mouseout(stopRotate);
+            rotateRightSpan.mouseout(stopRotate);
+
         });
 
 });
