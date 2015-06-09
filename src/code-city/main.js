@@ -94,7 +94,21 @@ define(['code-city/code-city',
             //we add color to the elements (using the min/max information)
             dataHelpers.colorize(treeData,'colorValue',nodeColorScale,{min: 0,max : 0.4});
 
-            var codeCityChart = codeCity.codeCity($('#code-city-chart')[0], treeData, graphParams);
+            var codeCityChart;
+            try{
+                codeCityChart = codeCity.codeCity($('#code-city-chart')[0], treeData, graphParams);
+            }catch(e){
+                if (e instanceof TypeError)
+                    $('#code-city-chart').html("\
+                    \
+                    <div> \
+                    <img src=\"../assets/images/code_city_large.png\" width=\"100%\"> \
+                    <p style=\"background:rgba(255,0,0,0.7); top:300px; position:absolute; font-size:18px;\" class=\"alert alert-danger\"> \
+                        It seems that your browser does not support (or has deactivated) WebGL, which is required for this graph. Please upgrade your browser or make sure that WebGL is activated. Below is a teaser of what the visualization of your project might look like. \
+                    </p> \
+                    </div> \
+                    ");
+            }
 
             var isRotating = false;
 
