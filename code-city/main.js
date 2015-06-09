@@ -4,7 +4,7 @@ define(['code-city/code-city',
         'data/loaders',
         'data/helpers'],function(codeCity,$,legend,dataLoaders,dataHelpers)
 {
-    var data = dataLoaders.complexityExample();
+    var data = dataLoaders.complexityExample('django');
 
     var metric = 'functions';
 
@@ -36,15 +36,15 @@ define(['code-city/code-city',
                 <tbody> \
                     <tr> \
                         <td>lines of code</td> \
-                        <td>"+d.data[metric].total_number_of_lines+"</td> \
+                        <td>"+d.data.metrics.total_number_of_lines+"</td> \
                     </tr> \
                     <tr> \
                         <td>total complexity</td> \
-                        <td>"+d.data[metric].total_cyclomatic_complexity+"</td> \
+                        <td>"+d.data.code_patterns[metric].total_cyclomatic_complexity+"</td> \
                     </tr> \
                     <tr> \
                         <td>complexity / 100 lines of code</td> \
-                        <td>"+Math.ceil(d.data[metric].total_cyclomatic_complexity/d.data[metric].total_number_of_lines*100)+"</td> \
+                        <td>"+Math.ceil(d.data.code_patterns[metric].total_cyclomatic_complexity/d.data.metrics.total_number_of_lines*100)+"</td> \
                     </tr> \
                 </tbody> \
             </table> \
@@ -54,17 +54,19 @@ define(['code-city/code-city',
 
     function nodeHeight(d) {
         function snapToGrid(grid, value) {
-          return grid * Math.ceil(value / 5);
+          return grid * Math.ceil(value / grid);
         }
-        return snapToGrid(5, d.data[metric].total_cyclomatic_complexity);
+        if (d.children && d.children.length)
+            return 0;
+        return snapToGrid(5, d.data.code_patterns[metric].total_cyclomatic_complexity);
     }
 
     function nodeColor(d) {
-      return d.data[metric].total_cyclomatic_complexity/d.data[metric].total_number_of_lines;
+      return d.data.code_patterns[metric].total_cyclomatic_complexity/d.data.metrics.total_number_of_lines;
     }
 
     function nodeArea(d) {
-      return d.data[metric].total_number_of_lines;
+      return d.data.metrics.total_number_of_lines;
     }
 
     var graphParams = {
@@ -77,22 +79,28 @@ define(['code-city/code-city',
             area: nodeArea,
             colorValue: nodeColor,
             title: function(d){return d.key.split('/').slice(-1)[0];},
-            path: function(d){return d.key;}
+            path: function(d){return d.key || '(all files)';}
         },
         split: function(key){return key.split('/')
     }};
 
     data.then(
         function(d){
-            var treeData = dataHelpers.convertToTree(d,mapperParams);
+            var mergedData = {};
+            for(var key in d.python.code_patterns){
+                mergedData[key] = {metrics : d.python.metrics[key],code_patterns : d.python.code_patterns[key]};
+            }
+            var treeData = dataHelpers.convertToTree(mergedData,mapperParams);
             //we add color to the elements (using the min/max information)
-            dataHelpers.colorize(treeData,'colorValue',nodeColorScale);
+            dataHelpers.colorize(treeData,'colorValue',nodeColorScale,{min: 0,max : 0.4});
 
             var codeCityChart = codeCity.codeCity($('#code-city-chart')[0], treeData, graphParams);
 
             var isRotating = false;
 
             var startRotate = function(left){
+                if (isRotating)
+                    return;
                 isRotating = false;
                 var rotate = function(){
                     if (!isRotating)
