@@ -37,9 +37,9 @@ define([],function(){
             if (params.mappers){
                 for(var mapper in params.mappers){
                     node[mapper] = params.mappers[mapper](node);
-                    if (!min[mapper] || min[mapper] > node[mapper])
+                    if (min[mapper] === undefined || (min[mapper] > node[mapper]))
                         min[mapper] = node[mapper];
-                    if (!max[mapper] || max[mapper] < node[mapper])
+                    if (max[mapper] === undefined || (max[mapper] < node[mapper]))
                         max[mapper] = node[mapper];
                 }
             }
@@ -64,7 +64,7 @@ define([],function(){
             reject(new Error(error));
           }
           else {
-            resolve(root.summary.python.code_patterns);
+            resolve(root.summary);
           }
         });
       });
@@ -84,7 +84,7 @@ define([],function(){
                          .range(colors);
 
       var applyColorScale = function(node){
-        node.color = colorScale(node[key]);
+        node.color = colorScale(Math.max(minValue,Math.min(node[key],maxValue)));
         for(var i in node.children)
             applyColorScale(node.children[i]);
       };

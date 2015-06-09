@@ -44,8 +44,6 @@ function(){
                 maxValue = d3.max(params.bounds);
             }
 
-            console.log(data);
-
             function processNodeData(nodeData,name,level,start_deg,stop_deg)
             {
                 var total = nodeData.value;
@@ -151,9 +149,6 @@ function(){
                         params.legend.onMouseout(d,d3.event);
                 })
                 .attr("class","form");
-
-                group.append("svg:title")
-                .text(function(d) { return d.title; });
 
                 group.append("svg:text")
                 .attr("x",function(b){return getStart(b,ref)+5;})

@@ -1,10 +1,6 @@
-body {
-  font-family: Century Gothic, Arial, Helvetica;
-  font-size: 1em;
-  padding: 10px; }
-
-h1 {
-  margin: 26px 0; }
+.sunburst .form:hover{
+    opacity:0.5 !important;
+}
 
 .sunburst-canvas {
   position: relative; }
@@ -18,5 +14,3 @@ h1 {
 
 .node {
   position: absolute; }
-
-/*# sourceMappingURL=style.css.map */

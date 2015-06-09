@@ -96,8 +96,6 @@ function(){
                         params.legend.onMouseout(d,d3.event);
                 })
                 .attr("class","form")
-                .append("svg:title")
-                .text(function(d) { return d.name+","+JSON.stringify(d.data); });
 
             function getStartAngle(d,ref)
             {

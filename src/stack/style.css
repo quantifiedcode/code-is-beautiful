@@ -1,10 +1,11 @@
-body {
-  font-family: Century Gothic, Arial, Helvetica;
-  font-size: 1em;
-  padding: 10px; }
+.stack-chart rect:hover{
+    opacity:0.5 !important;
+}
 
-h1 {
-  margin: 26px 0; }
+.stack-chart text{
+    font-weight:lighter;
+    font-size:14px;
+}
 
 .stack-chart-canvas {
   position: relative; }
@@ -18,5 +19,3 @@ h1 {
 
 .node {
   position: absolute; }
-
-/*# sourceMappingURL=style.css.map */

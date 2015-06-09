@@ -55,7 +55,7 @@ function(){
             .value(function(d){return d.area;});
 
           return layout.nodes(data).filter(function(d){
-            return Math.min(d.dx, d.dy) > 2 * houseMargin;
+            return Math.min(d.dx, d.dy) > 0.001 * houseMargin;
           });
         }
 
@@ -119,17 +119,20 @@ void main() { \
 ";
 
           var cameraDistance = 3.0;
-          var cameraHeight = 1.8;
-          var cameraZ = -1.5;
+          var cameraHeight = 1.95;
+          var cameraZ = -1.4;
           var cameraAngle = 0.0;
+          var maximumHeight;
+          var minimumHeight;
 
           function addHouse(d){
-            var unitHeight = 3 / 1000;
+            var unitHeight = 5 / 1000;
             var w = 1000;
             var h = 1000;
             var gw = Math.max(0, (d.dx - 2 * houseMargin)*w) / 500;
             var gh = Math.max(0, (d.dy - 2 * houseMargin)*h) / 500;
-            var gd = unitHeight * (d.children ? 1 : (d.height-rawData.minima.height)/(rawData.maxima.height-rawData.minima.height)*500.0);
+            var baseHeight = Math.sqrt((d.height-minimumHeight)/(maximumHeight-minimumHeight));
+            var gd = unitHeight * (d.children ? 0.05 : baseHeight)*130.0;
 
             var gx = ((d.x + d.dx/2)*w ) / 500 - 1;
             var gy = 1 - ((d.y + d.dy/2)*h ) / 500;
@@ -259,6 +262,17 @@ void main() { \
           renderer.domElement.addEventListener('mousemove', onCanvasMouseMove, false);
           renderer.domElement.addEventListener('click', onCanvasMouseClick, false);
 
+          var findExtremes = function(d){
+            if (d.children)
+                return;
+            if (d.height > maximumHeight || maximumHeight === undefined)
+                maximumHeight = d.height;
+            if (d.height < minimumHeight || minimumHeight === undefined)
+                minimumHeight = d.height;
+          }
+
+          data.forEach(findExtremes);
+
           data.forEach(addHouse);
 
           render();
@@ -271,7 +285,7 @@ void main() { \
 
           var flyBy = function(){
               var acceleration = Math.pow((maxDistance-distance)/maxDistance,2.0);
-              distance -= 0.01+8.0*(1.0-acceleration);
+              distance -= 0.01+16.0*(1.0-acceleration);
               var height = distance/maxDistance*maxHeight;
               distanceAngle=distance*0.1;
 

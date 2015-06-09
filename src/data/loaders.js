@@ -1,7 +1,7 @@
 define(["data/helpers"],function(dataHelpers){
     return {
-        complexityExample : function(){
-            var data = dataHelpers.loadJson('../data/django_summary.json');
+        complexityExample : function(example){
+            var data = dataHelpers.loadJson('../data/'+example+'_complexity.json');
             return data;
         },
     }
