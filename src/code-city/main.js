@@ -119,7 +119,7 @@ define(['code-city/code-city',
                 var rotate = function(){
                     if (!isRotating)
                         return;
-                    codeCityChart.setCameraRotation(codeCityChart.getCameraRotation()+(left ? -0.01 : 0.01));
+                    codeCityChart.setCameraRotation(codeCityChart.getCameraRotation()+(left ? 0.01 : -0.01));
                     setTimeout(rotate,10);
                 }
                 var startRotation = function(){
