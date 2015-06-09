@@ -6,7 +6,7 @@
       <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
 
       <script src="../config.js"></script>
-      <script data-main="sunburst/main" src="../bower_components/requirejs/require.js"></script>
+      <script data-main="stack/main" src="../bower_components/requirejs/require.js"></script>
 
     </head>
     <body>
@@ -14,40 +14,53 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
               <a class="navbar-brand" href="../">Code is Beautiful!</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <form class="navbar-form navbar-right">
-                <div class="form-group">
-                  <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">subscribe to our newsletter</button>
-              </form>
+                <form action="//quantifiedcode.us8.list-manage.com/subscribe/post?u=effb5c0618b377e47329ca7ba&amp;id=0eb810e227" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate navbar-form navbar-right" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                      <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Email address" required>
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_effb5c0618b377e47329ca7ba_0eb810e227" tabindex="-1" value="">
+                      </div>
+                      <input type="submit" value="Subscribe to our newsletter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
+                    </div>
+                </form>
             </div><!--/.navbar-collapse -->
           </div>
         </nav>
 
         <div class="container">
-            <h2>Sunburst <a href="../" class="btn btn-primary">back to index</a></h2>
+            <h2>Stack</h2>
             <div class="row">
                 <div class="col-md-4">
                     <p class="lead">
-                        The sunburst chart is a hierarchical pie chart which maps the directory
-                        structure of the project to a set of circles.<br />
-                        <br />
-                        The size of each segment
-                        (in degrees) is given by the number of lines in a given directory / file.
-                        The color of each segment can be used to represent various metrics, e.g.
-                        the average cyclomatic complexity per line of code.
                     </p>
+                    <a class="btn btn-primary" href="https://www.quantifiedcode.com/app/code-is-beautiful" role="button"><strong>Live demo</strong></a>
+                    <a href="../index.html" class="btn btn-default">Back to index</a>
                 </div>
                 <div class="col-md-8">
-                    <div class="sunburst-canvas" id="sunburst-canvas">
-                        <div id="sunburst" class="sunburst"></div>
-                        <div id="sunburst-legend" class="sunburst-legend"></div>
+                    <div class="stack-chart-canvas" id="stack-chart-canvas">
+                        <div id="stack-chart" class="stack-chart"></div>
+                        <div id="stack-chart-legend" class="stack-chart-legend"></div>
                     </div>
                 </div>
             </div>
+
+            <hr>
+
+            <footer>
+              <p><a href="https://www.quantifiedcode.com/">&copy; QuantifiedCode UG (haftungsbeschränkt) 2015</a></p>
+            </footer>
+
         </div>
+
     </body>
 </html>
