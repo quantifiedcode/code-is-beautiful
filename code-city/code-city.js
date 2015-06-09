@@ -100,7 +100,7 @@ void main() { \
     m = dEdge*m; \
     m = m*glow; \
     float dPersp = sqrt(pow(vUv.x-1.0,2.0)+pow(vUv.y-1.0,2.0)); \
-    m = (1.0+dPersp*0.3)*m; \
+    m = (1.0+dPersp*0.2)*m; \
     gl_FragColor = vec4(vColor.x*m, vColor.y*m,vColor.z*m ,1.0); \
 }";
           var vertexShader = " \
