@@ -5,11 +5,14 @@ Code-is-beautiful is a cross-language project, aimed to collect and develop bett
 
 ##Who we are
 
-We’re [QuantifiedCode](https://www.quantifiedcode.com), a Berlin-based startup. Our mission is to help programmers write better code! Therefore, we make state-of-the-art code analysis available to everyone. Our first product is an [online tool for automated, data-driven code review](https://www.quantifiedcode.com). When building this tool we learned a lot about code, code quality and code visualization. With this project we like to share our learnings back to the community and hope, with your support, to take code visualization to the next level.
+We’re [QuantifiedCode](https://www.quantifiedcode.com), a Berlin-based startup. Our mission is to help programmers write better code! Therefore, we make state-of-the-art code analysis available to everyone. Our first product is an [online tool for automated, data-driven code review](https://www.quantifiedcode.com), that uses these visuals, to help you better understand your code base. When building this tool we learned a lot about code, code quality and code visualization. With this project we like to share our learnings back to the community and hope, with your support, to take code visualization to the next level.
 
 ##Available visualizations
 
-<a href="/sunburst/README.md"><img src="/sunburst/sunburst.png?raw=true" width="200" alt="Sunburst (Hierarchical pie chart)"></a>
+<a href="/sunburst/README.md"><img src="/src/assets/images/sunburst.png?raw=true" width="250" alt="Sunburst (Hierarchical pie chart)"></a>
+<a href="/sunburst/README.md"><img src="/src/assets/images/stack.png?raw=true" width="250" alt="Sunburst (Hierarchical pie chart)"></a>
+<a href="/sunburst/README.md"><img src="/src/assets/images/code_city.png?raw=true" width="250" alt="Code city"></a>
+
 
 ## How to contribute
 
