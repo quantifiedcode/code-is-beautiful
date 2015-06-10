@@ -152,9 +152,9 @@ function(){
 
                 group.append("svg:text")
                 .attr("x",function(b){return getStart(b,ref)+5;})
-                .attr("y",function(b){return getY(b,ref)+10;})
+                .attr("y",function(b){return getY(b,ref)+20;})
                 .attr("text-anchor","left")
-                .attr("alignment-baseline","before-edge")
+                .attr("dominant-baseline","before-edge")
                 .attr("fill",function(d){return d.textColor || '#000000';})
                 .attr("pointer-events",'none')
                 .attr("opacity",0)
