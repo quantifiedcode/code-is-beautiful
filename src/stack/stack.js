@@ -221,7 +221,7 @@ function(){
                 .filter(function(b){return isChild(b,d)})
                 .transition().duration(500)
                 .attr("x",function(b){return getStart(b,new_ref)+5;})
-                .attr("y",function(b){return getY(b,new_ref)+10;})
+                .attr("y",function(b){return getY(b,new_ref)+20;})
                 .attr("opacity",function(b){return getTextOpacity(b,new_ref,this);});
 
                 svg.selectAll("text")
