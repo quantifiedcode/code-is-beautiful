@@ -9,9 +9,9 @@ We’re [QuantifiedCode](https://www.quantifiedcode.com), a Berlin-based startup
 
 ##Available visualizations
 
-<a href="/sunburst/README.md"><img src="/src/assets/images/sunburst.png?raw=true" width="250" alt="Sunburst (Hierarchical pie chart)"></a>
-<a href="/sunburst/README.md"><img src="/src/assets/images/stack.png?raw=true" width="250" alt="Sunburst (Hierarchical pie chart)"></a>
-<a href="/sunburst/README.md"><img src="/src/assets/images/code_city.png?raw=true" width="250" alt="Code city"></a>
+<a href="/sunburst/README.md"><img src="/src/assets/images/sunburst.png?raw=true" width="225" alt="Sunburst (Hierarchical pie chart)"></a>
+<a href="/sunburst/README.md"><img src="/src/assets/images/stack.png?raw=true" width="225" alt="Sunburst (Hierarchical pie chart)"></a>
+<a href="/sunburst/README.md"><img src="/src/assets/images/code_city.png?raw=true" width="225" alt="Code city"></a>
 
 
 ## How to contribute
