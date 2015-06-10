@@ -152,9 +152,9 @@ function(){
 
                 group.append("svg:text")
                 .attr("x",function(b){return getStart(b,ref)+5;})
-                .attr("y",function(b){return getY(b,ref)+10;})
+                .attr("y",function(b){return getY(b,ref)+20;})
                 .attr("text-anchor","left")
-                .attr("alignment-baseline","before-edge")
+                .attr("dominant-baseline","before-edge")
                 .attr("fill",function(d){return d.textColor || '#000000';})
                 .attr("pointer-events",'none')
                 .attr("opacity",0)
@@ -221,7 +221,7 @@ function(){
                 .filter(function(b){return isChild(b,d)})
                 .transition().duration(500)
                 .attr("x",function(b){return getStart(b,new_ref)+5;})
-                .attr("y",function(b){return getY(b,new_ref)+10;})
+                .attr("y",function(b){return getY(b,new_ref)+20;})
                 .attr("opacity",function(b){return getTextOpacity(b,new_ref,this);});
 
                 svg.selectAll("text")

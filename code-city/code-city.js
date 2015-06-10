@@ -188,8 +188,8 @@ void main() { \
 
             var mouse = new THREE.Vector2();
 
-            mouse.x = ((e.offsetX - et.offsetLeft) / et.clientWidth) * 2 - 1;
-            mouse.y = -((e.offsetY - et.offsetTop) / et.clientHeight) * 2 + 1;
+            mouse.x = (((e.offsetX !== undefined ? e.offsetX : e.layerX) - et.offsetLeft) / et.clientWidth) * 2 - 1;
+            mouse.y = -((( e.offsetY !== undefined ? e.offsetY : e.layerY) - et.offsetTop) / et.clientHeight) * 2 + 1;
             mouse.z = -1;
 
             raycaster.setFromCamera(mouse, camera);
