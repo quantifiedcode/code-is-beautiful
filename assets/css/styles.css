@@ -6,11 +6,15 @@ body {
 }
 
 h1 {
-  margin: 0px
+  margin: 20px 0px
 }
 
 h6 {
   margin-bottom: 26px;
+}
+
+.jumbotron p {
+  font-size: 18px;
 }
 
 .code-city-canvas {
