@@ -1,6 +1,6 @@
 define([],function(){
-    return function(legendDiv,legendTitle,legendContent)
-    {
+    "use strict";
+    return function(legendDiv,legendTitle,legendContent) {
         return {
           onClick : function(d,e){
             //nothing...
@@ -15,8 +15,11 @@ define([],function(){
             var et = e.target;
             if (d && e){
 
-                var desiredLeft = ((e.offsetX !== undefined ? e.offsetX : e.layerX)-legendDiv.offsetLeft);
-                var desiredTop = ((e.offsetY !== undefined ? e.offsetY : e.layerY) -legendDiv.offsetTop);
+                var legendRect = legendDiv.getBoundingClientRect();
+                var desiredLeft = e.clientX - legendRect.left;
+                var desiredTop = e.clientY - legendRect.top;
+                //additional offset in order to avoid hiding information behind the popup
+                desiredTop -= 10;
 
                 var style = {
                              left:desiredLeft+"px",
