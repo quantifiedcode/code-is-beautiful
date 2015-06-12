@@ -72,6 +72,10 @@ function(){
           var scene = new THREE.Scene();
           var camera = new THREE.PerspectiveCamera(45.0, width/height, 1.0, 1000 );
 
+          if (!window.renderer)
+            window.renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+          var renderer = window.renderer;
+
           camera.position.y = -3;
           camera.position.z = 2;
           camera.lookAt(new THREE.Vector3(0, -0.25, 0));
@@ -235,7 +239,6 @@ void main() { \
                 params.legend.onClick(selectedD,e);
           }
 
-          renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
           renderer.setSize(width, height);
           renderer.setClearColor( 0xffffff, 1);
           renderer.shadowMapEnabled = true;
@@ -285,7 +288,7 @@ void main() { \
 
           var flyBy = function(){
               var acceleration = Math.pow((maxDistance-distance)/maxDistance,2.0);
-              distance -= 0.01+16.0*(1.0-acceleration);
+              distance -= 0.01+32.0*(1.0-acceleration);
               var height = distance/maxDistance*maxHeight;
               distanceAngle=distance*0.1;
 
