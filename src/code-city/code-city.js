@@ -1,52 +1,13 @@
-(
-function(){
-
-    function codeCityModule(THREE,d3)
-    {
-
-        'use'+' strict';
+(function(){
+    function codeCityModule(THREE,d3) {
+        'use strict';
 
         var houseMargin = 0.005; //min margin in percent
         var houseFloorHeight = 3;
 
         var exports = {};
 
-        function initChart(chartEl, legend, data){
-          var format = d3.format(",d");
-
-          var canvas = d3.select(chartEl);
-          var width = canvas.node().offsetWidth;
-          var height = width;
-
-            var svg = canvas.append("div")
-                .style("position", "relative")
-                .style("width", width + "px")
-                .style("height", height + "px")
-                .attr("class", "treemap");
-
-            function position() {
-              this.style("left", function(d) {return Math.ceil((d.x + houseMargin)*width) + "px"; })
-                  .style("top", function(d) {return Math.ceil((d.y + houseMargin)*height) + "px"; })
-                  .style("width", function(d) {return Math.max(0, Math.ceil((d.dx - 2 * houseMargin)*width)) + "px"; })
-                  .style("height", function(d) {return Math.max(0, Math.ceil((d.dy - 2 * houseMargin)*height)) + "px"; });
-            }
-
-            var node = svg.selectAll(".node")
-              .data(data)
-              .enter().append("div")
-                .attr("class", "node")
-                .attr("title", function(d) { return d.path; })
-                .call(position)
-                .style("background-color", function(d){d.color});
-             if (legend) {
-               node.on("mouseover", legend.update)
-               .on("mouseout", legend.remove);
-            }
-        }
-
-
         function generateTreemap(data,params){
-          
           var layout = d3.layout.treemap()
             .size([1.0, 1.0])
             .sticky(true)
@@ -322,7 +283,6 @@ void main() { \
 
         }
 
-        exports.initChart = initChart;
         exports.codeCity = codeCity;
         exports.generateTreemap = generateTreemap;
 
@@ -332,10 +292,9 @@ void main() { \
 
     if (typeof define === "function" && define.amd){
         define(["threejs","d3"],codeCityModule);
-    }
-    else if (typeof module === "object" && module.exports)
+    } else if (typeof module === "object" && module.exports){
         module.exports = codeCityModule(require('d3'),require('threejs'));
-    else
+    } else {
         window.codeCity = codeCityModule(d3,THREE);
-
+    }
 }())
