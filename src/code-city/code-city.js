@@ -21,7 +21,6 @@
         }
 
         function codeCity(element, rawData, params){
-
           var canvas = d3.select(element);
 
           var data = generateTreemap(rawData,params);
@@ -178,8 +177,7 @@ void main() { \
                 }
                 render();
               }
-            }
-            else if (intersected) {
+            } else if (intersected) {
                 intersected.material.uniforms.glow = {type : 'f',value : 1.0};
                 intersected.material.needsUpdate = true;
               intersected = null;
@@ -280,14 +278,12 @@ void main() { \
             getCameraRotation : getCameraRotation,
             setCameraRotation : setCameraRotation
           };
-
         }
 
         exports.codeCity = codeCity;
         exports.generateTreemap = generateTreemap;
 
         return exports;
-
     }
 
     if (typeof define === "function" && define.amd){

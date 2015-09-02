@@ -5,4 +5,4 @@ define(["data/helpers"],function(dataHelpers){
             return data;
         },
     }
-})
+});

@@ -1,15 +1,11 @@
 define([],function(){
-
     function convertToTree(data,params) {
-
         var minValue,maxValue;
 
         var min = {};
         var max = {};
 
-
         function recursivelyAddNode(node, keyComponents,key, data) {
-
           node.children = node.children || [];
 
           if (keyComponents.length && keyComponents[0]){
@@ -98,6 +94,4 @@ define([],function(){
         loadJson : loadJson,
         colorize: colorize
     }
-
-
-})
+});
