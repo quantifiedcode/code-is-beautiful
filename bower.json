@@ -22,10 +22,10 @@
   ],
   "dependencies": {
     "d3": "~3.5.5",
-    "threejs": "*",
-    "jquery" : "*",
-    "bootstrap": "*",
-    "requirejs" : "*"
+    "threejs": "r71",
+    "jquery" : "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "requirejs" : "~2.1.18"
   },
   "devDependencies": {
     "jasmine": "~2.3.4"
