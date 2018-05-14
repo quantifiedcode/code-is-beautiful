@@ -36,4 +36,4 @@ If you have any questions, please get in touch with us:
 
 ## More code (quality) projects
 
-* [Little Book of Python Anti-Patterns](http://docs.quantifiedcode.com/python-code-patterns/)
+* [Little Book of Python Anti-Patterns](http://docs.quantifiedcode.com/python-anti-patterns/)
